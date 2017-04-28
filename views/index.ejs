@@ -15,26 +15,27 @@
 
     <!-- HEADER -->
       <header>
-          <div>
-              <h1>Archi-Wiki</h1>
-              <a href="#"><img src="" alt="Archi Wiki" /></a>
-              <p>Partageons la ville, ses batîments, ses lieux...</p>
-          </div>
-          <nav>
-              <a href="#">L'association</a>
-              <a href="#">Open Data</a>
-              <a href="#">Faire un don</a>
-              <a href="#">English</a>
-              <a href="#">Deutsch</a>
-              <a href="#" class="fa fa-search"></a>
-              <a href="#" class="fa fa-search"></a>
-          </nav>
+        <div class="Header-Close"> <!--  Header -->
+
+            <div>
+                <h1>Archi-Wiki</h1>
+                <a href="#"><img src="" alt="Archi Wiki" /></a>
+                <p>Partageons la ville, ses batîments, ses lieux...</p>
+            </div>
+            <nav>
+                <a href="#">L'association</a>
+                <a href="#">Open Data</a>
+                <a href="#">Faire un don</a>
+                <a href="#">English</a>
+                <a href="#">Deutsch</a>
+                <a href="#" class="fa fa-search"></a>
+                <a href="#" class="fa fa-search"></a>
+            </nav>
+
+        </div> <!-- end Header -->
       </header>
-
-      <!-- MAIN CONTENT -->
-
-
-      <section class="full-width">
+      <!-- SECTION 1 -->
+      <section class="row">
           <article>
               <immg src="./assets/img/image-en-avant.jpg" alt=""/>
               <div>
@@ -50,170 +51,178 @@
               </div>
           </article>
           <article>
-              <p id="headline">>Retrouvez à travers nos 11 257 adresses et 61 652 photos :</p>
+              <p id="headline">>Recherchez à travers nos 11 257 adresses et 61 652 photos :</p>
               <input type="text" placeholder="Indiquez une adresse, un nom de rue ou un bâtiment"/>
               <button class="fa fa-search"></button>
               <a href="#">recherche avacée</a>
           </article>
+        </section>
+        <!-- SECTION 2 -->
+        <section class="row">
           <article>
-             <div id="about-us">
+             <div class="col-md-5" id="about-us ">
                   <h3>Archi-Wiki, c'est qui ?</h3>
                   <p>
-                      Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.
-                  </p>
-                  <p>
-                      The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.
-                  </p>
-                  <p>
-                      Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?
+                    Archi-Wiki est un site collaboratif fonctionnant sur le principe du wiki : offrir un contenu objectif et vérifiable, librement réutilisable, que chacun peut enrichir, modifier et améliorer.
+                    L’objectif est de recenser les bâtiments et lieux d’une ville, en retraçant leur histoire à travers la date de construction, le nom de l’architecte, les transformations successives, ainsi que de nombreuses photos.
+                    Archi-wiki a ainsi l’ambition de devenir une sorte de Wikipédia de l’architecture, en constituant une base de données en perpétuelle évolution.
                   </p>
                   <a href="#">Pour continuez, inscrivez-vous !</a>
               </div>
-              <div id="last-news">
+
+              <div class="col-md-7" id="last-news">
                   <h3>Dernière actualité de l'asssociation :<br/>Ode à la création, appel à la contribution</h3>
-                  <p>
-                      Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.
-                      The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.
-                  </p>
-                  <a href="#">Lire la suite ></a>
-                  <a href="#">Découvrez les autres actualités ></a>
+                  <img class="col-md-4" src="./assets/img/.jpg" alt="" />
+                  <div class="col-md-8">
+                    <p>
+                      Ce qui nous intéresse ce n'est pas ce qui existe mais ce qui n'existe pas. Les bibliothèques sont remplies de livres, pourtant ce qui reste à écrire est infiniment plus important. Face à la matérialité du monde c'est pourtant le vide qui est bien plus immense et infini, source de création. Les chercheurs publient, trouvent et donnent de nouvelles pistes qui sont autant de recherches qui posent d'autres questions. Ainsi la quête de connaissance serait insatiable.
+                    </p>
+                    <a href="#">Lire la suite ></a>
+                    <a href="#">Découvrez les autres actualités ></a>
+                  </div>
+
               </div>
           </article>
       </section>
-      <section class="width-2-col">
-          <article>
-              <h2>Dernières modifications</h2>
-              <div>
-                  <img src="./assets/img/.jpg" alt="" />
-                  <div>
-                      <h3>36 rue Aubry-et-Rau</h3>
-                      <div class="fil-ariane">
-                          <a href="#">France</a> > <a href="#">Strasbourg</a>
-                      </div>
-                      <p>
-                          Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.
-                      </p>
-                      <a href="#">Consultez la fiche ></a>
-                  </div>
-              </div>
-              <div>
-                  <img src="./assets/img/.jpg" alt="" />
-                  <div>
-                      <h3>36 rue Aubry-et-Rau</h3>
-                      <div class="fil-ariane">
-                          <a href="#">France</a> > <a href="#">Strasbourg</a>
-                      </div>
-                      <p>
-                          Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.
-                      </p>
-                      <a href="#">Consultez la fiche ></a>
-                  </div>
-              </div>
-              <div>
-                  <img src="./assets/img/.jpg" alt="" />
-                  <div>
-                      <h3>36 rue Aubry-et-Rau</h3>
-                      <div class="fil-ariane">
-                          <a href="#">France</a> > <a href="#">Strasbourg</a>
-                      </div>
-                      <p>
-                          Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.
-                      </p>
-                      <a href="#">Consultez la fiche ></a>
-                  </div>
-              </div>
-              <div>
-                  <img src="./assets/img/.jpg" alt="" />
-                  <div>
-                      <h3>36 rue Aubry-et-Rau</h3>
-                      <div class="fil-ariane">
-                          <a href="#">France</a> > <a href="#">Strasbourg</a>
-                      </div>
-                      <p>
-                          Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.
-                      </p>
-                      <a href="#">Consultez la fiche ></a>
-                  </div>
-              </div>
-              <div>
-                  <img src="./assets/img/.jpg" alt="" />
-                  <div>
-                      <h3>36 rue Aubry-et-Rau</h3>
-                      <div class="fil-ariane">
-                          <a href="#">France</a> > <a href="#">Strasbourg</a>
-                      </div>
-                      <p>
-                          Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.
-                      </p>
-                      <a href="#">Consultez la fiche ></a>
-                  </div>
-              </div>
-          </article>
-          <button class="all-last-content">Tous les derniers commentaires</button>
+
+      <!-- section 3 -->
+      <section class="row">
+        <!-- ARTICLE -->
+        <article class="col-md-8">
+            <h2>Dernières modifications</h2>
+            <div>
+                <img class="col-md-6" src="./assets/img/.jpg" alt="" />
+                <div class="col-md-6">
+                    <h3>36 rue Aubry-et-Rau</h3>
+                    <div class="fil-ariane">
+                        <a href="#">France</a> > <a href="#">Strasbourg</a>
+                    </div>
+                    <p>
+                        Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.
+                    </p>
+                    <a href="#">Consultez la fiche ></a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="./assets/img/.jpg" alt="" />
+                <div>
+                    <h3>36 rue Aubry-et-Rau</h3>
+                    <div class="fil-ariane">
+                        <a href="#">France</a> > <a href="#">Strasbourg</a>
+                    </div>
+                    <p>
+                        Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.
+                    </p>
+                    <a href="#">Consultez la fiche ></a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="./assets/img/.jpg" alt="" />
+                <div>
+                    <h3>36 rue Aubry-et-Rau</h3>
+                    <div class="fil-ariane">
+                        <a href="#">France</a> > <a href="#">Strasbourg</a>
+                    </div>
+                    <p>
+                        Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.
+                    </p>
+                    <a href="#">Consultez la fiche ></a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="./assets/img/.jpg" alt="" />
+                <div>
+                    <h3>36 rue Aubry-et-Rau</h3>
+                    <div class="fil-ariane">
+                        <a href="#">France</a> > <a href="#">Strasbourg</a>
+                    </div>
+                    <p>
+                        Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.
+                    </p>
+                    <a href="#">Consultez la fiche ></a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="./assets/img/.jpg" alt="" />
+                <div>
+                    <h3>36 rue Aubry-et-Rau</h3>
+                    <div class="fil-ariane">
+                        <a href="#">France</a> > <a href="#">Strasbourg</a>
+                    </div>
+                    <p>
+                        Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.
+                    </p>
+                    <a href="#">Consultez la fiche ></a>
+                </div>
+            </div>
+        </article>
+        <!-- ASIDE -->
+        <aside class="col-md-4">
+            <h2>Derniers commentaires</h2>
+            <article>
+                <h3>36 rue Aubry-et-Rau</h3>
+                <div class="fil-ariane">
+                    <a href="#">France</a> > <a href="#">Strasbourg</a>
+                </div>
+                <p>
+                    Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.
+                </p>
+                <a href="#">Consultez la fiche ></a>
+            </article>
+            <article>
+                <h3>36 rue Aubry-et-Rau</h3>
+                <div class="fil-ariane">
+                    <a href="#">France</a> > <a href="#">Strasbourg</a>
+                </div>
+                <p>
+                    Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.
+                </p>
+                <a href="#">Consultez la fiche ></a>
+            </article>
+            <article>
+                <h3>36 rue Aubry-et-Rau</h3>
+                <div class="fil-ariane">
+                    <a href="#">France</a> > <a href="#">Strasbourg</a>
+                </div>
+                <p>
+                    Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.
+                </p>
+                <a href="#">Consultez la fiche ></a>
+            </article>
+            <article>
+                <h3>36 rue Aubry-et-Rau</h3>
+                <div class="fil-ariane">
+                    <a href="#">France</a> > <a href="#">Strasbourg</a>
+                </div>
+                <p>
+                    Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.
+                </p>
+                <a href="#">Consultez la fiche ></a>
+            </article>
+            <article>
+                <h3>36 rue Aubry-et-Rau</h3>
+                <div class="fil-ariane">
+                    <a href="#">France</a> > <a href="#">Strasbourg</a>
+                </div>
+                <p>
+                    Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.
+                </p>
+                <a href="#">Consultez la fiche ></a>
+            </article>
+        </aside>
       </section>
 
+      <!-- BUTTOM -->
+      <div class="row">
+        <button class="col-md-6" type="button" name="button">toutes les dernières modifications</button>
+        <button class="col-md-6" type="button" name="button">tous les dernièrs commentaires</button>
+      </div>
 
-      <!-- ASIDE -->
-
-      <aside class="width-1-col">
-          <h2>Derniers commentaires</h2>
-          <article>
-              <h3>36 rue Aubry-et-Rau</h3>
-              <div class="fil-ariane">
-                  <a href="#">France</a> > <a href="#">Strasbourg</a>
-              </div>
-              <p>
-                  Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.
-              </p>
-              <a href="#">Consultez la fiche ></a>
-          </article>
-          <article>
-              <h3>36 rue Aubry-et-Rau</h3>
-              <div class="fil-ariane">
-                  <a href="#">France</a> > <a href="#">Strasbourg</a>
-              </div>
-              <p>
-                  Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.
-              </p>
-              <a href="#">Consultez la fiche ></a>
-          </article>
-          <article>
-              <h3>36 rue Aubry-et-Rau</h3>
-              <div class="fil-ariane">
-                  <a href="#">France</a> > <a href="#">Strasbourg</a>
-              </div>
-              <p>
-                  Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.
-              </p>
-              <a href="#">Consultez la fiche ></a>
-          </article>
-          <article>
-              <h3>36 rue Aubry-et-Rau</h3>
-              <div class="fil-ariane">
-                  <a href="#">France</a> > <a href="#">Strasbourg</a>
-              </div>
-              <p>
-                  Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.
-              </p>
-              <a href="#">Consultez la fiche ></a>
-          </article>
-          <article>
-              <h3>36 rue Aubry-et-Rau</h3>
-              <div class="fil-ariane">
-                  <a href="#">France</a> > <a href="#">Strasbourg</a>
-              </div>
-              <p>
-                  Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.
-              </p>
-              <a href="#">Consultez la fiche ></a>
-          </article>
-          <button class="all-last-content">Tous les derniers commentaires</button>
-      </aside>
-
-      <!-- FOOTER -->
-
-      <footer>
-          <div class="footer-col-1">
+      <!-- SECTION 4 -->  <!-- FOOTER -->
+      <section class="Footer-section row">
+        <footer>
+          <!-- left -->
+          <div class="col-md-4 Foo-left">
               <img src="./assets/img/.png" alt=""/>
               <nav>
                   <ul>
@@ -223,16 +232,20 @@
                   </ul>
               </nav>
           </div>
-          <div class="footer-col-2">
+          <!-- center -->
+          <div class="col-md-4 Foo-center">
               <h5>Archi-Wiki est un projet financé et soutenu par :</h5>
               <p>Prévoir logo des partenaires, en défausses</p>
           </div>
-          <div class="footer-col-3">
+          <!-- right -->
+          <div class="col-md-4 Foo-right">
               <a href="#"><span class="fa fa-twiiter"></span> @archi-strasbourg</a>
               <a href="#"><span class="fa fa-facebook"></span>Archi.Strasbourg</a>
               <a href="#"><span class="fa fa-instagram-"></span>archi_strasbourg</a>
           </div>
-      </footer>
+        </footer>
+      </section>
+
 
     </div>
   </div>   <!--end Main Container -->

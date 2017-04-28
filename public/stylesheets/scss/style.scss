@@ -1,4 +1,396 @@
-body{
+
+// VAR COLOR
+$sea: #32a398;
+$greeny-blue: #3abdaf;
+$aqua-marine: #42d7c8;
+$slate: #455763;
+$charcoal-grey: #34414a;
+$adobe: #be6152;
+$earth: #a65447;
+$greyblue: #63b7ba;
+$dark-peach: #d96e5d;
+$seafoam-blue: #70cfd3;
+$white: #d2d2d2;
+$greyish: #b8b8b8;
+$white-two: #ebebeb;
+$tiffany-blue: #7eeaee;
+$white-three: #fafafa;
+$dark: #222a30;
+$slate-85: rgba(70, 87, 99, 0.85);
+
+// TEXT STYLE
+.iconcomment {
+  font-family: archiwiki-icons;
+  font-size: 150px;
+  color: rgba(235, 235, 235, 0.45);
+}
+
+.h1-like {
+  font-family: Montserrat;
+  font-size: 39px;
+  font-weight: bold;
+  line-height: 1.28;
+  color: #34414a;
+  color: $charcoal-grey;
+}
+
+.h2-like {
+  font-family: Montserrat;
+  font-size: 31px;
+  font-weight: bold;
+  line-height: 1.29;
+  color: #34414a;
+  color: $charcoal-grey;
+}
+
+.icon {
+  font-family: archiwiki-icons;
+  font-size: 30px;
+  color: #34414a;
+  color: $charcoal-grey;
+}
+
+.h3-likeinvert {
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: #ebebeb;
+  color: $white-two;
+}
+
+label {
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: bold;
+  color: #ebebeb;
+  color: $white-two;
+}
+
+.h3-like {
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.32;
+  color: #34414a;
+  color: $charcoal-grey;
+}
+
+.h4-like {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.3;
+  color: #34414a;
+  color: $charcoal-grey;
+}
+
+.h4-likeinvert {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.3;
+  color: #273746;
+}
+
+.bandeauicon {
+  font-family: archiwiki-icons;
+  font-size: 20px;
+  text-align: center;
+  color: #d96e5d;
+  color: $dark-peach;
+}
+
+.h3-likemobile {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.22;
+  color: #273746;
+}
+
+.h3-likemobilealign-center {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.22;
+  text-align: center;
+  color: #273746;
+}
+
+.h3-likeinvertmobile {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #ebebeb;
+  color: $white-two;
+}
+
+.buttonlarge {
+  font-family: OpenSans;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  color: #34414a;
+  color: $charcoal-grey;
+}
+
+.social-link {
+  font-family: OpenSans;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fafafa;
+  color: $white-three;
+}
+
+.nav-link {
+  font-family: OpenSans;
+  font-size: 18px;
+  text-align: center;
+  color: #34414a;
+  color: $charcoal-grey;
+}
+
+.nav-linkinvert {
+  font-family: OpenSans;
+  font-size: 18px;
+  color: #fafafa;
+  color: $white-three;
+}
+
+.h5-likeinvert {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.31;
+  text-align: center;
+  color: #fafafa;
+  color: $white-three;
+}
+
+.h5-like {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.31;
+  color: #34414a;
+  color: $charcoal-grey;
+}
+
+textarea {
+  font-family: FiraMono;
+  font-size: 16px;
+  line-height: 1;
+  text-align: left;
+  color: #222a30;
+  color: $dark;
+}
+
+.linkhover {
+  font-family: OpenSans;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+  color: #be6152;
+  color: $adobe;
+}
+
+.link {
+  font-family: OpenSans;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+  color: #a65447;
+  color: $earth;
+}
+
+p {
+  font-family: OpenSans;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+  color: #222a30;
+  color: $dark;
+}
+
+.buttonlargemobile {
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  color: #34414a;
+  color: $charcoal-grey;
+}
+
+.databox__info {
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: 600;
+  color: #34414a;
+  color: $charcoal-grey;
+}
+
+.pmobile {
+  font-family: OpenSans;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: left;
+  color: #222a30;
+  color: $dark;
+}
+
+.cat-linkssmallmobile {
+  font-family: OpenSans;
+  font-size: 14px;
+  color: #a65447;
+  color: $earth;
+}
+
+.cat-linkssmall {
+  font-family: OpenSans;
+  font-size: 14px;
+  color: #a65447;
+  color: $earth;
+}
+
+.linksmallfade {
+  font-family: OpenSans;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: right;
+  color: #a65447;
+  color: $earth;
+}
+
+.linkcontrib {
+  font-family: OpenSans;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: right;
+  color: #a65447;
+  color: $earth;
+}
+
+.nav-linkfooter {
+  font-family: OpenSans;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+  color: #fafafa;
+  color: $white-three;
+}
+
+.figcaption {
+  font-family: OpenSans;
+  font-size: 14px;
+  text-align: center;
+  color: #465763;
+}
+
+.psmall {
+  font-family: OpenSans;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: left;
+  color: #465763;
+}
+
+.Text-Style {
+  font-family: OpenSans;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: left;
+  color: #a65447;
+  color: $earth;
+}
+
+.nav-linkinverted {
+  font-family: OpenSans;
+  font-size: 14px;
+  text-align: center;
+  color: #fafafa;
+  color: $white-three;
+}
+
+.pcommentairesmall {
+  font-family: OpenSans;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.71;
+  color: #465763;
+}
+
+.h5-likeinvertmobile {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.75;
+  color: #fafafa;
+  color: $white-three;
+}
+
+.h5-likemobile {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.75;
+  color: #273746;
+}
+
+.databox__label {
+  font-family: OpenSans;
+  font-size: 12px;
+  color: #465763;
+}
+
+.linksmallmobile {
+  font-family: OpenSans;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: left;
+  color: #a65447;
+  color: $earth;
+}
+
+.linkcontribsmall {
+  font-family: OpenSans;
+  font-size: 10px;
+  line-height: 1.5;
+  text-align: center;
+  color: #a65447;
+  color: $earth;
+}
+
+// BODY
+
+body {
     background: #fff;
     margin: 0 auto;
+}
+.row {
+  padding-left: 15px!important;
+  padding-right: 15px!important;
+}
+
+.Header-Close {
+  width: 1280px;
+  height: 436px;
+}
+
+// FOOTER
+
+.Footer-section {
+  background-color: $charcoal-grey;
+  color: $white-three;
+  height: 308px;
+  text-align: center;
+  ul {
+    list-style: none;
+  }
+  p {
+    text-align: center;
+    background-color: $charcoal-grey;
+    color: $white-three;
+  }
 }
