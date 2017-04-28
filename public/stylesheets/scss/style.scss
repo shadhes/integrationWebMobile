@@ -5,25 +5,6 @@ $width : 600px;
 * {
   color: $red;
 }
-body.home {
-  .media-unit {
-    border: 1px solid #ccc;
-    background-color: #fff;
-    .right {
-      border-left: 1px solid #ccc;
-      h1 {
-        font-size: 24px;
-        color:$red;
-        background: $red;
-        background-color: $red;
-        height: $height;
-        width: $width;
-        border: 1px solid $red;
-        padding: 10px;
-        margin: 10px;
-        margin-left: 10px;
-        margin-right: 15px;
-      }
-    }
-  }
+body {
+font-size: 3em;
 }
