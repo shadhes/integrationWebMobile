@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:600");
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono|Montserrat:700|Open+Sans:400,400i,600");
 .iconcomment {
   font-family: archiwiki-icons;
   font-size: 150px;
   color: rgba(235, 235, 235, 0.45); }
 
 .h1-like {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 39px;
   font-weight: bold;
   line-height: 1.28;
@@ -13,7 +13,7 @@
   color: #34414a; }
 
 .h2-like {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 31px;
   font-weight: bold;
   line-height: 1.29;
@@ -27,7 +27,7 @@
   color: #34414a; }
 
 .h3-likeinvert {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 25px;
   font-weight: bold;
   text-align: center;
@@ -35,14 +35,14 @@
   color: #ebebeb; }
 
 label {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 25px;
   font-weight: bold;
   color: #ebebeb;
   color: #ebebeb; }
 
 .h3-like {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 25px;
   font-weight: bold;
   line-height: 1.32;
@@ -50,7 +50,7 @@ label {
   color: #34414a; }
 
 .h4-like {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 20px;
   font-weight: bold;
   line-height: 1.3;
@@ -58,7 +58,7 @@ label {
   color: #34414a; }
 
 .h4-likeinvert {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 20px;
   font-weight: bold;
   line-height: 1.3;
@@ -72,14 +72,14 @@ label {
   color: #d96e5d; }
 
 .h3-likemobile {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 18px;
   font-weight: bold;
   line-height: 1.22;
   color: #273746; }
 
 .h3-likemobilealign-center {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 18px;
   font-weight: bold;
   line-height: 1.22;
@@ -87,7 +87,7 @@ label {
   color: #273746; }
 
 .h3-likeinvertmobile {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 18px;
   font-weight: bold;
   text-align: center;
@@ -95,7 +95,7 @@ label {
   color: #ebebeb; }
 
 .buttonlarge {
-  font-family: OpenSans;
+  font-family: "Open Sans";
   font-size: 18px;
   font-weight: 600;
   text-align: center;
@@ -103,27 +103,27 @@ label {
   color: #34414a; }
 
 .social-link {
-  font-family: OpenSans;
+  font-family: "Open Sans";
   font-size: 18px;
   font-weight: 600;
   color: #fafafa;
   color: #fafafa; }
 
 .nav-link {
-  font-family: OpenSans;
+  font-family: "Open Sans";
   font-size: 18px;
   text-align: center;
   color: #34414a;
   color: #34414a; }
 
 .nav-linkinvert {
-  font-family: OpenSans;
+  font-family: "Open Sans";
   font-size: 18px;
   color: #fafafa;
   color: #fafafa; }
 
 .h5-likeinvert {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 16px;
   font-weight: bold;
   line-height: 1.31;
@@ -132,7 +132,7 @@ label {
   color: #fafafa; }
 
 .h5-like {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 16px;
   font-weight: bold;
   line-height: 1.31;
@@ -140,7 +140,7 @@ label {
   color: #34414a; }
 
 textarea {
-  font-family: FiraMono;
+  font-family: "Fira Mono";
   font-size: 16px;
   line-height: 1;
   text-align: left;
@@ -148,7 +148,7 @@ textarea {
   color: #222a30; }
 
 .linkhover {
-  font-family: OpenSans;
+  font-family: "Open Sans";
   font-size: 16px;
   line-height: 1.5;
   text-align: left;
@@ -156,7 +156,7 @@ textarea {
   color: #be6152; }
 
 .link {
-  font-family: OpenSans;
+  font-family: "Open Sans";
   font-size: 16px;
   line-height: 1.5;
   text-align: left;
@@ -164,7 +164,7 @@ textarea {
   color: #a65447; }
 
 p {
-  font-family: OpenSans;
+  font-family: "Open Sans";
   font-size: 16px;
   line-height: 1.5;
   text-align: left;
@@ -172,7 +172,7 @@ p {
   color: #222a30; }
 
 .buttonlargemobile {
-  font-family: OpenSans;
+  font-family: "Open Sans";
   font-size: 14px;
   font-weight: 600;
   text-align: center;
@@ -180,14 +180,14 @@ p {
   color: #34414a; }
 
 .databox__info {
-  font-family: OpenSans;
+  font-family: "Open Sans";
   font-size: 14px;
   font-weight: 600;
   color: #34414a;
   color: #34414a; }
 
 .pmobile {
-  font-family: OpenSans;
+  font-family: "Open Sans";
   font-size: 14px;
   line-height: 1.43;
   text-align: left;
@@ -195,19 +195,19 @@ p {
   color: #222a30; }
 
 .cat-linkssmallmobile {
-  font-family: OpenSans;
+  font-family: "Open Sans";
   font-size: 14px;
   color: #a65447;
   color: #a65447; }
 
 .cat-linkssmall {
-  font-family: OpenSans;
+  font-family: "Open Sans";
   font-size: 14px;
   color: #a65447;
   color: #a65447; }
 
 .linksmallfade {
-  font-family: OpenSans;
+  font-family: "Open Sans";
   font-size: 14px;
   line-height: 1.71;
   text-align: right;
@@ -215,7 +215,7 @@ p {
   color: #a65447; }
 
 .linkcontrib {
-  font-family: OpenSans;
+  font-family: "Open Sans";
   font-size: 14px;
   line-height: 1.71;
   text-align: right;
@@ -223,7 +223,7 @@ p {
   color: #a65447; }
 
 .nav-linkfooter {
-  font-family: OpenSans;
+  font-family: "Open Sans";
   font-size: 14px;
   line-height: 1.43;
   text-align: center;
@@ -231,20 +231,20 @@ p {
   color: #fafafa; }
 
 .figcaption {
-  font-family: OpenSans;
+  font-family: "Open Sans";
   font-size: 14px;
   text-align: center;
   color: #465763; }
 
 .psmall {
-  font-family: OpenSans;
+  font-family: "Open Sans";
   font-size: 14px;
   line-height: 1.71;
   text-align: left;
   color: #465763; }
 
 .Text-Style {
-  font-family: OpenSans;
+  font-family: "Open Sans";
   font-size: 14px;
   line-height: 1.71;
   text-align: left;
@@ -252,21 +252,21 @@ p {
   color: #a65447; }
 
 .nav-linkinverted {
-  font-family: OpenSans;
+  font-family: "Open Sans";
   font-size: 14px;
   text-align: center;
   color: #fafafa;
   color: #fafafa; }
 
 .pcommentairesmall {
-  font-family: OpenSans;
+  font-family: "Open Sans";
   font-size: 14px;
   font-style: italic;
   line-height: 1.71;
   color: #465763; }
 
 .h5-likeinvertmobile {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 12px;
   font-weight: bold;
   line-height: 1.75;
@@ -274,19 +274,19 @@ p {
   color: #fafafa; }
 
 .h5-likemobile {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 12px;
   font-weight: bold;
   line-height: 1.75;
   color: #273746; }
 
 .databox__label {
-  font-family: OpenSans;
+  font-family: "Open Sans";
   font-size: 12px;
   color: #465763; }
 
 .linksmallmobile {
-  font-family: OpenSans;
+  font-family: "Open Sans";
   font-size: 12px;
   line-height: 1.5;
   text-align: left;
@@ -294,7 +294,7 @@ p {
   color: #a65447; }
 
 .linkcontribsmall {
-  font-family: OpenSans;
+  font-family: "Open Sans";
   font-size: 10px;
   line-height: 1.5;
   text-align: center;
@@ -304,14 +304,13 @@ p {
 body {
   background: #fafafa;
   margin: 0 auto; }
+  body .Header-Close {
+    width: 1280px;
+    height: 436px; }
 
 .row {
   padding-left: 15px !important;
   padding-right: 15px !important; }
-
-.Header-Close {
-  width: 1280px;
-  height: 436px; }
 
 .Footer-section {
   background-color: #34414a;

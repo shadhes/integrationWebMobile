@@ -1,24 +1,7 @@
 // IMPORTS
 @import "./imports/font.scss";
-
-// VAR COLOR
-$sea: #32a398;
-$greeny-blue: #3abdaf;
-$aqua-marine: #42d7c8;
-$slate: #455763;
-$charcoal-grey: #34414a;
-$adobe: #be6152;
-$earth: #a65447;
-$greyblue: #63b7ba;
-$dark-peach: #d96e5d;
-$seafoam-blue: #70cfd3;
-$white: #d2d2d2;
-$greyish: #b8b8b8;
-$white-two: #ebebeb;
-$tiffany-blue: #7eeaee;
-$white-three: #fafafa;
-$dark: #222a30;
-$slate-85: rgba(70, 87, 99, 0.85);
+@import "./imports/color.scss";
+@import "./imports/text-style.scss";
 
 // TEXT STYLE
 .iconcomment {
@@ -28,7 +11,7 @@ $slate-85: rgba(70, 87, 99, 0.85);
 }
 
 .h1-like {
-  font-family: Montserrat;
+  font-family: $montserrat;
   font-size: 39px;
   font-weight: bold;
   line-height: 1.28;
@@ -37,7 +20,7 @@ $slate-85: rgba(70, 87, 99, 0.85);
 }
 
 .h2-like {
-  font-family: Montserrat;
+  font-family: $montserrat;
   font-size: 31px;
   font-weight: bold;
   line-height: 1.29;
@@ -53,7 +36,7 @@ $slate-85: rgba(70, 87, 99, 0.85);
 }
 
 .h3-likeinvert {
-  font-family: Montserrat;
+  font-family: $montserrat;
   font-size: 25px;
   font-weight: bold;
   text-align: center;
@@ -62,7 +45,7 @@ $slate-85: rgba(70, 87, 99, 0.85);
 }
 
 label {
-  font-family: Montserrat;
+  font-family: $montserrat;
   font-size: 25px;
   font-weight: bold;
   color: #ebebeb;
@@ -70,7 +53,7 @@ label {
 }
 
 .h3-like {
-  font-family: Montserrat;
+  font-family: $montserrat;
   font-size: 25px;
   font-weight: bold;
   line-height: 1.32;
@@ -79,7 +62,7 @@ label {
 }
 
 .h4-like {
-  font-family: Montserrat;
+  font-family: $montserrat;
   font-size: 20px;
   font-weight: bold;
   line-height: 1.3;
@@ -88,7 +71,7 @@ label {
 }
 
 .h4-likeinvert {
-  font-family: Montserrat;
+  font-family: $montserrat;
   font-size: 20px;
   font-weight: bold;
   line-height: 1.3;
@@ -104,7 +87,7 @@ label {
 }
 
 .h3-likemobile {
-  font-family: Montserrat;
+  font-family: $montserrat;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.22;
@@ -112,7 +95,7 @@ label {
 }
 
 .h3-likemobilealign-center {
-  font-family: Montserrat;
+  font-family: $montserrat;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.22;
@@ -121,7 +104,7 @@ label {
 }
 
 .h3-likeinvertmobile {
-  font-family: Montserrat;
+  font-family: $montserrat;
   font-size: 18px;
   font-weight: bold;
   text-align: center;
@@ -130,7 +113,7 @@ label {
 }
 
 .buttonlarge {
-  font-family: OpenSans;
+  font-family: $opensans;
   font-size: 18px;
   font-weight: 600;
   text-align: center;
@@ -139,7 +122,7 @@ label {
 }
 
 .social-link {
-  font-family: OpenSans;
+  font-family: $opensans;
   font-size: 18px;
   font-weight: 600;
   color: #fafafa;
@@ -147,7 +130,7 @@ label {
 }
 
 .nav-link {
-  font-family: OpenSans;
+  font-family: $opensans;
   font-size: 18px;
   text-align: center;
   color: #34414a;
@@ -155,14 +138,14 @@ label {
 }
 
 .nav-linkinvert {
-  font-family: OpenSans;
+  font-family: $opensans;
   font-size: 18px;
   color: #fafafa;
   color: $white-three;
 }
 
 .h5-likeinvert {
-  font-family: Montserrat;
+  font-family: $montserrat;
   font-size: 16px;
   font-weight: bold;
   line-height: 1.31;
@@ -172,7 +155,7 @@ label {
 }
 
 .h5-like {
-  font-family: Montserrat;
+  font-family: $montserrat;
   font-size: 16px;
   font-weight: bold;
   line-height: 1.31;
@@ -181,7 +164,7 @@ label {
 }
 
 textarea {
-  font-family: FiraMono;
+  font-family: $firamono;
   font-size: 16px;
   line-height: 1;
   text-align: left;
@@ -190,7 +173,7 @@ textarea {
 }
 
 .linkhover {
-  font-family: OpenSans;
+  font-family: $opensans;
   font-size: 16px;
   line-height: 1.5;
   text-align: left;
@@ -199,7 +182,7 @@ textarea {
 }
 
 .link {
-  font-family: OpenSans;
+  font-family: $opensans;
   font-size: 16px;
   line-height: 1.5;
   text-align: left;
@@ -208,7 +191,7 @@ textarea {
 }
 
 p {
-  font-family: OpenSans;
+  font-family: $opensans;
   font-size: 16px;
   line-height: 1.5;
   text-align: left;
@@ -217,7 +200,7 @@ p {
 }
 
 .buttonlargemobile {
-  font-family: OpenSans;
+  font-family: $opensans;
   font-size: 14px;
   font-weight: 600;
   text-align: center;
@@ -226,7 +209,7 @@ p {
 }
 
 .databox__info {
-  font-family: OpenSans;
+  font-family: $opensans;
   font-size: 14px;
   font-weight: 600;
   color: #34414a;
@@ -234,7 +217,7 @@ p {
 }
 
 .pmobile {
-  font-family: OpenSans;
+  font-family: $opensans;
   font-size: 14px;
   line-height: 1.43;
   text-align: left;
@@ -243,21 +226,21 @@ p {
 }
 
 .cat-linkssmallmobile {
-  font-family: OpenSans;
+  font-family: $opensans;
   font-size: 14px;
   color: #a65447;
   color: $earth;
 }
 
 .cat-linkssmall {
-  font-family: OpenSans;
+  font-family: $opensans;
   font-size: 14px;
   color: #a65447;
   color: $earth;
 }
 
 .linksmallfade {
-  font-family: OpenSans;
+  font-family: $opensans;
   font-size: 14px;
   line-height: 1.71;
   text-align: right;
@@ -266,7 +249,7 @@ p {
 }
 
 .linkcontrib {
-  font-family: OpenSans;
+  font-family: $opensans;
   font-size: 14px;
   line-height: 1.71;
   text-align: right;
@@ -275,7 +258,7 @@ p {
 }
 
 .nav-linkfooter {
-  font-family: OpenSans;
+  font-family: $opensans;
   font-size: 14px;
   line-height: 1.43;
   text-align: center;
@@ -284,14 +267,14 @@ p {
 }
 
 .figcaption {
-  font-family: OpenSans;
+  font-family: $opensans;
   font-size: 14px;
   text-align: center;
   color: #465763;
 }
 
 .psmall {
-  font-family: OpenSans;
+  font-family: $opensans;
   font-size: 14px;
   line-height: 1.71;
   text-align: left;
@@ -299,7 +282,7 @@ p {
 }
 
 .Text-Style {
-  font-family: OpenSans;
+  font-family: $opensans;
   font-size: 14px;
   line-height: 1.71;
   text-align: left;
@@ -308,7 +291,7 @@ p {
 }
 
 .nav-linkinverted {
-  font-family: OpenSans;
+  font-family: $opensans;
   font-size: 14px;
   text-align: center;
   color: #fafafa;
@@ -316,7 +299,7 @@ p {
 }
 
 .pcommentairesmall {
-  font-family: OpenSans;
+  font-family: $opensans;
   font-size: 14px;
   font-style: italic;
   line-height: 1.71;
@@ -324,7 +307,7 @@ p {
 }
 
 .h5-likeinvertmobile {
-  font-family: Montserrat;
+  font-family: $montserrat;
   font-size: 12px;
   font-weight: bold;
   line-height: 1.75;
@@ -333,7 +316,7 @@ p {
 }
 
 .h5-likemobile {
-  font-family: Montserrat;
+  font-family: $montserrat;
   font-size: 12px;
   font-weight: bold;
   line-height: 1.75;
@@ -341,13 +324,13 @@ p {
 }
 
 .databox__label {
-  font-family: OpenSans;
+  font-family: $opensans;
   font-size: 12px;
   color: #465763;
 }
 
 .linksmallmobile {
-  font-family: OpenSans;
+  font-family: $opensans;
   font-size: 12px;
   line-height: 1.5;
   text-align: left;
@@ -356,7 +339,7 @@ p {
 }
 
 .linkcontribsmall {
-  font-family: OpenSans;
+  font-family: $opensans;
   font-size: 10px;
   line-height: 1.5;
   text-align: center;
@@ -365,23 +348,21 @@ p {
 }
 
 // BODY
-
 body {
     background: #fafafa;
     margin: 0 auto;
+    
+    .Header-Close {
+        width: 1280px;
+        height: 436px;
+    }
 }
 .row {
   padding-left: 15px!important;
   padding-right: 15px!important;
 }
 
-.Header-Close {
-  width: 1280px;
-  height: 436px;
-}
-
 // FOOTER
-
 .Footer-section {
   background-color: $charcoal-grey;
   color: $white-three;
