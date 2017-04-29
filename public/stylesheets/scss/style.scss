@@ -1,3 +1,5 @@
+// IMPORTS
+@import "./imports/font.scss";
 
 // VAR COLOR
 $sea: #32a398;
@@ -365,7 +367,7 @@ p {
 // BODY
 
 body {
-    background: #fff;
+    background: #fafafa;
     margin: 0 auto;
 }
 .row {

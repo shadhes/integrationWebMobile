@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600");
 .iconcomment {
   font-family: archiwiki-icons;
   font-size: 150px;
@@ -301,7 +302,7 @@ p {
   color: #a65447; }
 
 body {
-  background: #fff;
+  background: #fafafa;
   margin: 0 auto; }
 
 .row {
