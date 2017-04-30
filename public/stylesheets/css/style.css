@@ -34,19 +34,18 @@
   color: #ebebeb;
   color: #ebebeb; }
 
-label {
+.label, .row article#recherche label {
   font-family: "Montserrat";
   font-size: 25px;
   font-weight: bold;
-  color: #ebebeb;
+  text-align: center;
   color: #ebebeb; }
 
-.h3-like {
+.h3-like, .row article#vedette div .title .h3-like {
   font-family: "Montserrat";
   font-size: 25px;
   font-weight: bold;
   line-height: 1.32;
-  color: #34414a;
   color: #34414a; }
 
 .h4-like {
@@ -109,13 +108,6 @@ label {
   color: #fafafa;
   color: #fafafa; }
 
-.nav-link {
-  font-family: "Open Sans";
-  font-size: 18px;
-  text-align: center;
-  color: #34414a;
-  color: #34414a; }
-
 .nav-linkinvert {
   font-family: "Open Sans";
   font-size: 18px;
@@ -131,12 +123,11 @@ label {
   color: #fafafa;
   color: #fafafa; }
 
-.h5-like {
+.h5-like, .row article#vedette div .title .h5-like {
   font-family: "Montserrat";
   font-size: 16px;
   font-weight: bold;
   line-height: 1.31;
-  color: #34414a;
   color: #34414a; }
 
 textarea {
@@ -301,16 +292,128 @@ p {
   color: #a65447;
   color: #a65447; }
 
+.inline-flex, .Header-Close, .Header-Close nav, .Header-Close nav ul, .Header-Close .nav-button, .Header-Close .nav-button ul {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: space-between; }
+
+.flex-column-layout, .row {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start; }
+
+.row {
+  width: 1280px;
+  margin: 0; }
+  .row p {
+    margin: 0;
+    padding: 15px 30px; }
+  .row a {
+    padding-left: 30px;
+    color: #a65447;
+    text-decoration: underline; }
+  .row a:hover {
+    text-decoration: none; }
+  .row article#vedette {
+    display: inline-flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    background: #fff;
+    position: relative; }
+    .row article#vedette img {
+      width: 57%; }
+    .row article#vedette div {
+      width: 43%; }
+      .row article#vedette div .title {
+        width: 100%;
+        background: #fff;
+        position: relative;
+        top: 0;
+        right: 35%;
+        padding: 1px 0 30px 30px; }
+        .row article#vedette div .title .h3-like {
+          margin: 0px 0 10px 0; }
+        .row article#vedette div .title .h5-like {
+          margin: 30px 0 10px 0; }
+  .row article#recherche {
+    width: 100%;
+    background: #a65447; }
+    .row article#recherche label {
+      width: 100%;
+      padding: 20px 0 10px 0;
+      letter-spacing: 1px; }
+  .row article#about-news div#about-us {
+    background: #ebebeb;
+    padding: 30px; }
+    .row article#about-news div#about-us h3 {
+      padding: 0 0 15px 0;
+      margin: 0; }
+    .row article#about-news div#about-us p {
+      padding: 0 0 15px 0; }
+    .row article#about-news div#about-us a {
+      padding: 0; }
+  .row article#about-news div#last-news {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    background: #fff;
+    padding: 30px 30px 0 0; }
+    .row article#about-news div#last-news h3 {
+      padding: 0 30px 30px 30px;
+      margin: 0; }
+    .row article#about-news div#last-news img {
+      width: 35.333333%;
+      padding: 0 15px 0 0; }
+    .row article#about-news div#last-news div {
+      width: 64.666667%; }
+      .row article#about-news div#last-news div p {
+        padding: 0 0 15px 0; }
+      .row article#about-news div#last-news div a {
+        padding: 0; }
+      .row article#about-news div#last-news div a:nth-child(3) {
+        float: right; }
+
 body {
   background: #fafafa;
   margin: 0 auto; }
-  body .Header-Close {
-    width: 1280px;
-    height: 436px; }
 
-.row {
-  padding-left: 15px !important;
-  padding-right: 15px !important; }
+.Header-Close {
+  width: 1280px;
+  height: 150px; }
+  .Header-Close .logo {
+    display: flex;
+    flex-flow: column wrap;
+    width: 22%;
+    margin: auto 0 auto 20px;
+    padding-top: 10px; }
+    .Header-Close .logo h1 {
+      display: none; }
+    .Header-Close .logo img {
+      width: 80%; }
+    .Header-Close .logo p {
+      font-size: 13px;
+      color: rgba(70, 87, 99, 0.85); }
+  .Header-Close nav {
+    width: 56%;
+    padding: 0; }
+    .Header-Close nav ul {
+      width: 100%;
+      list-style: none;
+      padding: 0; }
+      .Header-Close nav ul li {
+        margin: auto; }
+    .Header-Close nav a {
+      font-family: "Open Sans";
+      font-size: 18px;
+      text-align: center;
+      color: #34414a; }
+  .Header-Close .nav-button {
+    width: 22%; }
+    .Header-Close .nav-button ul {
+      width: 100%;
+      padding: 0; }
+      .Header-Close .nav-button ul li {
+        margin: auto; }
 
 .Footer-section {
   background-color: #34414a;

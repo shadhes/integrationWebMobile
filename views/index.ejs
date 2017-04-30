@@ -17,62 +17,76 @@
       <header>
         <div class="Header-Close"> <!--  Header -->
 
-            <div>
+            <div class="logo">
                 <h1 class="h1-like">Archi-Wiki</h1>
-                <a href="#"><img src="../images/black-logo_archi_wiki.png" alt="Logotype d'Archi Wiki en version noir" /></a>
+                <a href="#"><img src="https://gitlab.com/projet_int/integrationWeb/raw/master/images/black-logo_archi_wiki.png" alt="Logotype d'Archi Wiki en version noir" /></a>
                 <p>Partageons la ville, ses batîments, ses lieux...</p>
             </div>
             <nav>
-                <a href="#">L'association</a>
-                <a href="#">Open Data</a>
-                <a href="#">Faire un don</a>
-                <a href="#">English</a>
-                <a href="#">Deutsch</a>
-                <a href="#" class="fa fa-search"></a>
-                <a href="#" class="fa fa-search"></a>
+                <ul>
+                    <li><a href="#">L'association</a></li>
+                    <li><a href="#">Open Data</a></li>
+                    <li><a href="#">Faire un don</a></li>
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">Deutsch</a></li>
+                </ul>
             </nav>
+            <div class="nav-button">
+                <ul>
+                    <li><a href="#" class="fa fa-search"></a></li>
+                    <li><a href="#" class=""></a></li>
+                </ul>
+            </div>
 
         </div> <!-- end Header -->
       </header>
       <!-- SECTION 1 -->
-      <section class="row">
-          <article>
-              <immg src="=../images/image-en-avant.jpg" alt=""/>
-              <div>
-                  <h5 class="h5-like">Lumière sur...</h5>
-                  <h3 class="h3-like">36 Rue du Vieux Marché aux Poissons</h3>
-                  <div class="fil-ariane">
-                      <a href="#">France</a> > <a href="#">Strasbourg</a>
-                  </div>
-                  <p>
-                      The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.
-                  </p>
-                  <a href="#">Découvrez la fiche ></a>
-              </div>
-          </article>
-          <article>
-              <h3 class="h3-like.invert">Recherchez à travers nos 11 257 adresses et 61 652 photos :</p>
-              <input type="text" placeholder="Indiquez une adresse, un nom de rue ou un bâtiment"/>
-              <button class="fa fa-search"></button>
-              <a href="#" class="recherche-avance">recherche avacée</a>
-          </article>
+        <section class="row flex-column-layout">
+            <article id="vedette">
+                <img src="http://i-am-batman.alwaysdata.net/lp-atc/int%C3%A9gration-web-images/163H.jpg" alt=""/>
+                <div>
+                    <div class="title">
+                        <h5 class="h5-like">Lumière sur...</h5>
+                        <h3 class="h3-like">36 Rue du Vieux Marché aux Poissons</h3>
+                        <div class="fil-ariane">
+                            <a href="#">France</a> > <a href="#">Strasbourg</a>
+                        </div>
+                    </div>
+                    <p>
+                        The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers.
+                    </p>
+                    <a href="#">Découvrez la fiche ></a>
+                </div>
+            </article>
+            <article id="recherche">
+                <form method="">
+                    <label>Recherchez à travers nos 11 257 adresses et 61 652 photos :</label>
+                    <input type="text" placeholder="Indiquez une adresse, un nom de rue ou un bâtiment"/>
+                    <button class="fa fa-search"></button>
+                    <a href="#" class="recherche-avance">recherche avacée</a>
+                </form>
+            </article>
         </section>
         <!-- SECTION 2 -->
         <section class="row">
-          <article>
-             <div class="col-md-5" id="about-us ">
-                  <h3 class="h3-like">Archi-Wiki, c'est qui ?</h3>
-                  <p>
+          <article id="about-news">
+             <div class="col-md-5" id="about-us">
+                    <h3 class="h3-like">Archi-Wiki, c'est qui ?</h3>
+                    <p>
                     Archi-Wiki est un site collaboratif fonctionnant sur le principe du wiki : offrir un contenu objectif et vérifiable, librement réutilisable, que chacun peut enrichir, modifier et améliorer.
+                    </p>
+                    <p>
                     L’objectif est de recenser les bâtiments et lieux d’une ville, en retraçant leur histoire à travers la date de construction, le nom de l’architecte, les transformations successives, ainsi que de nombreuses photos.
-                    Archi-wiki a ainsi l’ambition de devenir une sorte de Wikipédia de l’architecture, en constituant une base de données en perpétuelle évolution.
-                  </p>
-                  <a href="#">Pour continuez, inscrivez-vous !</a>
+                    </p>
+                    <p>
+                        Archi-wiki a ainsi l’ambition de devenir une sorte de Wikipédia de l’architecture, en constituant une base de données en perpétuelle évolution.
+                    </p>
+                    <a href="#">Pour continuez, inscrivez-vous !</a>
               </div>
 
               <div class="col-md-7" id="last-news">
                   <h3 class="h3-like">Dernière actualité de l'asssociation :<br/>Ode à la création, appel à la contribution</h3>
-                  <img class="col-md-4" src="./assets/img/.jpg" alt="" />
+                  <img class="col-md-4" src="http://i-am-batman.alwaysdata.net/lp-atc/int%C3%A9gration-web-images/164H.jpg" alt="" />
                   <div class="col-md-8">
                     <p>
                       Ce qui nous intéresse ce n'est pas ce qui existe mais ce qui n'existe pas. Les bibliothèques sont remplies de livres, pourtant ce qui reste à écrire est infiniment plus important. Face à la matérialité du monde c'est pourtant le vide qui est bien plus immense et infini, source de création. Les chercheurs publient, trouvent et donnent de nouvelles pistes qui sont autant de recherches qui posent d'autres questions. Ainsi la quête de connaissance serait insatiable.
@@ -91,7 +105,7 @@
         <article class="col-md-8">
             <h2 class="h2-like">Dernières modifications</h2>
             <div>
-                <img class="col-md-6" src="./assets/img/.jpg" alt="" />
+                <img src="http://i-am-batman.alwaysdata.net/lp-atc/int%C3%A9gration-web-images/165H.jpg" alt="" />
                 <div class="col-md-6">
                     <h3>36 rue Aubry-et-Rau</h3>
                     <div class="fil-ariane">
@@ -104,7 +118,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <img src="./assets/img/.jpg" alt="" />
+                <img src="http://i-am-batman.alwaysdata.net/lp-atc/int%C3%A9gration-web-images/165H.jpg" alt="" />
                 <div>
                     <h3>36 rue Aubry-et-Rau</h3>
                     <div class="fil-ariane">
@@ -117,7 +131,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <img src="./assets/img/.jpg" alt="" />
+                <img src="http://i-am-batman.alwaysdata.net/lp-atc/int%C3%A9gration-web-images/165H.jpg" alt="" />
                 <div>
                     <h3 class="h3-like">36 rue Aubry-et-Rau</h3>
                     <div class="fil-ariane">
@@ -130,7 +144,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <img src="./assets/img/.jpg" alt="" />
+                <img src="http://i-am-batman.alwaysdata.net/lp-atc/int%C3%A9gration-web-images/165H.jpg" alt="" />
                 <div>
                     <h3 class="h3-like">36 rue Aubry-et-Rau</h3>
                     <div class="fil-ariane">
@@ -143,7 +157,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <img src="./assets/img/.jpg" alt="" />
+                <img src="http://i-am-batman.alwaysdata.net/lp-atc/int%C3%A9gration-web-images/165H.jpg" alt="" />
                 <div>
                     <h3 class="h3-like">36 rue Aubry-et-Rau</h3>
                     <div class="fil-ariane">
@@ -155,6 +169,7 @@
                     <a href="#">Consultez la fiche ></a>
                 </div>
             </div>
+            <button class="" type="button" name="button">toutes les dernières modifications</button>
         </article>
         <!-- ASIDE -->
         <aside class="col-md-4">
@@ -209,13 +224,14 @@
                 </p>
                 <a href="#">Consultez la fiche ></a>
             </article>
+            <button class="" type="button" name="button">tous les dernièrs commentaires</button>
         </aside>
       </section>
 
       <!-- BUTTOM -->
       <div class="row">
-        <button class="col-md-6" type="button" name="button">toutes les dernières modifications</button>
-        <button class="col-md-6" type="button" name="button">tous les dernièrs commentaires</button>
+        
+        
       </div>
 
       <!-- SECTION 4 -->  <!-- FOOTER -->
@@ -223,7 +239,7 @@
         <footer>
           <!-- left -->
           <div class="col-md-4 Foo-left">
-              <img src="./assets/img/.png" alt=""/>
+              <img src="http://i-am-batman.alwaysdata.net/lp-atc/int%C3%A9gration-web-images/white-logo_archi_wiki.png" alt=""/>
               <nav>
                   <ul>
                       <li>Nous contacter</li>
