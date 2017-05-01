@@ -46,6 +46,7 @@
   font-size: 25px;
   font-weight: bold;
   line-height: 1.32;
+  margin: 0px 0 10px 0;
   color: #34414a; }
 
 .h4-like {
@@ -53,7 +54,8 @@
   font-size: 20px;
   font-weight: bold;
   line-height: 1.3;
-  color: #34414a;
+  padding: 30px 30px 10px 30px;
+  margin: 0;
   color: #34414a; }
 
 .h4-likeinvert {
@@ -114,13 +116,12 @@
   color: #fafafa;
   color: #fafafa; }
 
-.h5-likeinvert {
+.h5-likeinvert, footer .Foo-center h5 {
   font-family: "Montserrat";
   font-size: 16px;
   font-weight: bold;
   line-height: 1.31;
   text-align: center;
-  color: #fafafa;
   color: #fafafa; }
 
 .h5-like, .row article#vedette div .title .h5-like {
@@ -135,7 +136,6 @@ textarea {
   font-size: 16px;
   line-height: 1;
   text-align: left;
-  color: #222a30;
   color: #222a30; }
 
 .linkhover {
@@ -143,7 +143,6 @@ textarea {
   font-size: 16px;
   line-height: 1.5;
   text-align: left;
-  color: #be6152;
   color: #be6152; }
 
 .link {
@@ -151,7 +150,6 @@ textarea {
   font-size: 16px;
   line-height: 1.5;
   text-align: left;
-  color: #a65447;
   color: #a65447; }
 
 p {
@@ -159,7 +157,6 @@ p {
   font-size: 16px;
   line-height: 1.5;
   text-align: left;
-  color: #222a30;
   color: #222a30; }
 
 .buttonlargemobile {
@@ -167,14 +164,12 @@ p {
   font-size: 14px;
   font-weight: 600;
   text-align: center;
-  color: #34414a;
   color: #34414a; }
 
 .databox__info {
   font-family: "Open Sans";
   font-size: 14px;
   font-weight: 600;
-  color: #34414a;
   color: #34414a; }
 
 .pmobile {
@@ -182,19 +177,16 @@ p {
   font-size: 14px;
   line-height: 1.43;
   text-align: left;
-  color: #222a30;
   color: #222a30; }
 
 .cat-linkssmallmobile {
   font-family: "Open Sans";
   font-size: 14px;
-  color: #a65447;
   color: #a65447; }
 
 .cat-linkssmall {
   font-family: "Open Sans";
   font-size: 14px;
-  color: #a65447;
   color: #a65447; }
 
 .linksmallfade {
@@ -202,7 +194,6 @@ p {
   font-size: 14px;
   line-height: 1.71;
   text-align: right;
-  color: #a65447;
   color: #a65447; }
 
 .linkcontrib {
@@ -210,15 +201,13 @@ p {
   font-size: 14px;
   line-height: 1.71;
   text-align: right;
-  color: #a65447;
   color: #a65447; }
 
-.nav-linkfooter {
+.nav-linkfooter, footer div.Foo-left nav ul li a {
   font-family: "Open Sans";
   font-size: 14px;
   line-height: 1.43;
   text-align: center;
-  color: #fafafa;
   color: #fafafa; }
 
 .figcaption {
@@ -249,7 +238,7 @@ p {
   color: #fafafa;
   color: #fafafa; }
 
-.pcommentairesmall {
+.pcommentairesmall, #third-section aside article p {
   font-family: "Open Sans";
   font-size: 14px;
   font-style: italic;
@@ -292,86 +281,57 @@ p {
   color: #a65447;
   color: #a65447; }
 
+.logo-defausse, footer .Foo-center p {
+  font-family: "Fira Mono";
+  font-size: 16px;
+  text-align: center;
+  color: #fafafa; }
+
 .inline-flex, .Header-Close, .Header-Close nav, .Header-Close nav ul, .Header-Close .nav-button, .Header-Close .nav-button ul {
   display: inline-flex;
   flex-flow: row nowrap;
   justify-content: space-between; }
+
+.flex-row-layout, #third-section {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start; }
 
 .flex-column-layout, .row {
   display: flex;
   flex-flow: column wrap;
   align-items: flex-start; }
 
-.row {
-  width: 1280px;
-  margin: 0; }
-  .row p {
-    margin: 0;
-    padding: 15px 30px; }
-  .row a {
-    padding-left: 30px;
-    color: #a65447;
-    text-decoration: underline; }
-  .row a:hover {
-    text-decoration: none; }
-  .row article#vedette {
-    display: inline-flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    background: #fff;
-    position: relative; }
-    .row article#vedette img {
-      width: 57%; }
-    .row article#vedette div {
-      width: 43%; }
-      .row article#vedette div .title {
-        width: 100%;
-        background: #fff;
-        position: relative;
-        top: 0;
-        right: 35%;
-        padding: 1px 0 30px 30px; }
-        .row article#vedette div .title .h3-like {
-          margin: 0px 0 10px 0; }
-        .row article#vedette div .title .h5-like {
-          margin: 30px 0 10px 0; }
-  .row article#recherche {
-    width: 100%;
-    background: #a65447; }
-    .row article#recherche label {
-      width: 100%;
-      padding: 20px 0 10px 0;
-      letter-spacing: 1px; }
-  .row article#about-news div#about-us {
-    background: #ebebeb;
-    padding: 30px; }
-    .row article#about-news div#about-us h3 {
-      padding: 0 0 15px 0;
-      margin: 0; }
-    .row article#about-news div#about-us p {
-      padding: 0 0 15px 0; }
-    .row article#about-news div#about-us a {
-      padding: 0; }
-  .row article#about-news div#last-news {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    background: #fff;
-    padding: 30px 30px 0 0; }
-    .row article#about-news div#last-news h3 {
-      padding: 0 30px 30px 30px;
-      margin: 0; }
-    .row article#about-news div#last-news img {
-      width: 35.333333%;
-      padding: 0 15px 0 0; }
-    .row article#about-news div#last-news div {
-      width: 64.666667%; }
-      .row article#about-news div#last-news div p {
-        padding: 0 0 15px 0; }
-      .row article#about-news div#last-news div a {
-        padding: 0; }
-      .row article#about-news div#last-news div a:nth-child(3) {
-        float: right; }
+.reset-padding, #third-section article#last-edit, #third-section article#last-edit .col-md-6, #third-section article#last-edit .col-md-6 .breadcrumb a, #third-section aside, #third-section aside article, #third-section aside article .breadcrumb a, div.button div, footer div.Foo-left, footer div.Foo-left nav ul, footer .Foo-center, footer .Foo-center h5, footer .Foo-center p, footer .Foo-right {
+  padding: 0; }
+
+.edit-content, #third-section article#last-edit .col-md-6:nth-child(2) div.edit-content, #third-section aside article {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  background: #fff; }
+
+.button-text, .button-more-info, div.button div button, div.button div button:hover, .button-social-media, footer .Foo-right a {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none; }
+
+.button-more-info, div.button div button, div.button div button:hover {
+  margin: auto;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  background: transparent;
+  border: solid 2px rgba(70, 87, 99, 0.65);
+  color: #34414a; }
+
+.button-social-media, footer .Foo-right a {
+  width: 75%;
+  padding: 15px;
+  text-transform: lowercase;
+  background: transparent;
+  border: solid 2px #fafafa;
+  color: #fafafa; }
 
 body {
   background: #fafafa;
@@ -415,14 +375,171 @@ body {
       .Header-Close .nav-button ul li {
         margin: auto; }
 
-.Footer-section {
+.row {
+  width: 1280px;
+  margin: 0; }
+  .row p {
+    margin: 0;
+    padding: 15px 30px; }
+  .row a {
+    color: #a65447;
+    text-decoration: underline;
+    transition: text-decoration 0.2s ease-in-out, color 0.2s ease-in-out; }
+  .row a.link-more {
+    padding-left: 30px; }
+  .row a:hover {
+    text-decoration: none;
+    color: #34414a; }
+  .row article#vedette {
+    display: inline-flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    background: #fff;
+    position: relative; }
+    .row article#vedette img {
+      width: 57%; }
+    .row article#vedette div {
+      width: 43%; }
+      .row article#vedette div .title {
+        width: 100%;
+        background: #fff;
+        position: relative;
+        top: 0;
+        right: 35%;
+        padding: 1px 0 30px 30px; }
+        .row article#vedette div .title .h5-like {
+          margin: 30px 0 10px 0; }
+        .row article#vedette div .title .breadcrumb span {
+          padding: 0 7px; }
+  .row article#recherche {
+    width: 100%;
+    background: #a65447; }
+    .row article#recherche label {
+      width: 100%;
+      padding: 20px 0 10px 0;
+      letter-spacing: 1px; }
+  .row article#about-news div#about-us {
+    background: #ebebeb;
+    padding: 30px; }
+    .row article#about-news div#about-us h3 {
+      padding: 0 0 15px 0;
+      margin: 0; }
+    .row article#about-news div#about-us p {
+      padding: 0 0 15px 0; }
+    .row article#about-news div#about-us a {
+      padding: 0; }
+  .row article#about-news div#last-news {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    background: #fff;
+    padding: 30px 30px 0 0; }
+    .row article#about-news div#last-news h3 {
+      padding: 0 30px 30px 30px;
+      margin: 0; }
+    .row article#about-news div#last-news img {
+      width: 35.333333%;
+      padding: 0 15px 0 0; }
+    .row article#about-news div#last-news div {
+      width: 64.666667%; }
+      .row article#about-news div#last-news div p {
+        padding: 0 0 15px 0; }
+      .row article#about-news div#last-news div a {
+        padding: 0; }
+      .row article#about-news div#last-news div a:nth-child(3) {
+        float: right; }
+
+#third-section article#last-edit {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start; }
+  #third-section article#last-edit .col-md-6 {
+    margin-bottom: 30px; }
+    #third-section article#last-edit .col-md-6 img {
+      width: 100%; }
+    #third-section article#last-edit .col-md-6 h3 {
+      padding: 30px 30px 10px 30px; }
+    #third-section article#last-edit .col-md-6 a {
+      margin-bottom: 30px; }
+    #third-section article#last-edit .col-md-6 .breadcrumb {
+      margin-left: 30px; }
+      #third-section article#last-edit .col-md-6 .breadcrumb span {
+        padding: 0 7px; }
+  #third-section article#last-edit .col-md-6:nth-child(odd) {
+    padding-right: 15px; }
+  #third-section article#last-edit .col-md-6:nth-child(even) {
+    padding-left: 15px; }
+  #third-section article#last-edit .col-md-6:nth-child(2) {
+    width: 100%;
+    position: relative;
+    padding: 0; }
+    #third-section article#last-edit .col-md-6:nth-child(2) img {
+      width: 69%; }
+    #third-section article#last-edit .col-md-6:nth-child(2) div.edit-content {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 50%; }
+
+#third-section aside {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  padding-left: 30px; }
+  #third-section aside article {
+    margin-bottom: 30px; }
+    #third-section aside article a {
+      margin-bottom: 30px; }
+    #third-section aside article .breadcrumb {
+      padding-left: 30px; }
+      #third-section aside article .breadcrumb span {
+        padding: 0 7px; }
+
+div.button {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: center; }
+  div.button div {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    align-content: space-around;
+    margin: 30px auto; }
+    div.button div button {
+      transition: color 0.2s ease-in-out, background 0.2s ease-in-out; }
+    div.button div button:hover {
+      background: #34414a;
+      color: #fff; }
+
+footer {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-content: space-between;
+  width: 100%;
   background-color: #34414a;
   color: #fafafa;
-  height: 308px;
-  text-align: center; }
-  .Footer-section ul {
-    list-style: none; }
-  .Footer-section p {
-    text-align: center;
-    background-color: #34414a;
-    color: #fafafa; }
+  text-align: center;
+  margin-top: 30px;
+  padding: 30px; }
+  footer div.Foo-left img {
+    width: 50%; }
+  footer div.Foo-left nav ul {
+    list-style: none;
+    margin-top: 30px; }
+    footer div.Foo-left nav ul li {
+      margin-bottom: 15px; }
+      footer div.Foo-left nav ul li a {
+        text-decoration: none; }
+  footer .Foo-center h5 {
+    margin: 40px auto 70px auto; }
+  footer .Foo-right {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center; }
+    footer .Foo-right a {
+      transition: background 0.2s ease-in-out; }
+    footer .Foo-right a:nth-child(2) {
+      margin: 30px auto; }
+    footer .Foo-right a:hover {
+      background: #fafafa; }
