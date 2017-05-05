@@ -427,6 +427,11 @@ p {
     color: $white-three;
 }
 
+a:hover{
+    color: $earth;
+    text-decoration: none;
+}
+
 // BODY
 body {
     background: #fafafa;
@@ -479,6 +484,7 @@ body {
                 a{
                     margin: auto;
                 }
+                @extend a:hover;
             }
         }
         
@@ -563,7 +569,7 @@ body {
 	                text-transform: uppercase;
                     
                 }
-                &.menu-opened{
+                a.menu-opened{
                         span{
                             background: transparent;
                             transition: background 0.2s ease-in-out;
@@ -576,23 +582,19 @@ body {
                         }
                     }
                     
-                &.menu-closed{
+                a.menu-closed{
                     span{
-                        background: $pure-white;
+                        background: $charcoal-grey;
                         transition: background 0.2s ease-in-out;
                     }
                     span::before{
-                        transform: translateY(-9px) rotate(0);
+                        transform: translateY(-8px) rotate(0);
                     }
                     span::after{
-                        transform: translateY(9px) rotate(0);
+                        transform: translateY(8px) rotate(0);
                     }
                 }
-                
-                a:hover{
-                    color: $earth;
-                    text-decoration: none;
-                }
+
             }
         }
     }
@@ -642,7 +644,7 @@ body {
                 background: $pure-white;
 	            position: relative;
 	            top: 0;
-	            right: 35%;
+	            right: 21%;
 	            padding: 1px 0 30px 30px;
                 
                 .h3-like{
@@ -912,6 +914,7 @@ div.button{
     display: inline-flex;
     flex-flow: row nowrap;
     align-items: center;
+    letter-spacing: 1px;
     
     div{
         display: flex;

@@ -205,7 +205,7 @@ p {
   text-align: right;
   color: #a65447; }
 
-.nav-linkfooter, footer div.Foo-left nav ul li a, footer div.Foo-left nav ul li a:hover {
+.nav-linkfooter, footer div.Foo-left nav ul li a, footer div.Foo-left nav ul li a:hover, footer div.Foo-left .Header-Close nav ul li li, .Header-Close footer div.Foo-left nav ul li li {
   font-family: "Open Sans";
   font-size: 14px;
   line-height: 1.43;
@@ -344,6 +344,10 @@ p {
   border: solid 2px #fafafa;
   color: #fafafa; }
 
+a:hover, .Header-Close nav ul li {
+  color: #a65447;
+  text-decoration: none; }
+
 body {
   background: #fafafa;
   margin: 0 auto; }
@@ -384,7 +388,7 @@ body {
       color: #34414a;
       text-transform: uppercase;
       transition: color 0.2s ease-in-out; }
-      .Header-Close nav a:hover {
+      .Header-Close nav a:hover, .Header-Close nav ul li {
         color: #a65447;
         text-decoration: none; }
   .Header-Close .nav-button {
@@ -425,9 +429,9 @@ body {
               transform: translateY(-8px); }
             .Header-Close .nav-button ul li a.menu-button span::after {
               transform: translateY(8px); }
-          .Header-Close .nav-button ul li a.menu-button:hover span::before {
+          .Header-Close .nav-button ul li a.menu-button:hover span::before, .Header-Close .nav-button nav ul li li.menu-button span::before, .Header-Close nav .nav-button ul li li.menu-button span::before {
             transform: translateY(-9px); }
-          .Header-Close .nav-button ul li a.menu-button:hover span::after {
+          .Header-Close .nav-button ul li a.menu-button:hover span::after, .Header-Close .nav-button nav ul li li.menu-button span::after, .Header-Close nav .nav-button ul li li.menu-button span::after {
             transform: translateY(9px); }
         .Header-Close .nav-button ul li a.menu-button::after {
           content: 'Menu';
@@ -437,23 +441,20 @@ body {
           font-size: 18px;
           color: #34414a;
           text-transform: uppercase; }
-        .Header-Close .nav-button ul li.menu-opened span {
+        .Header-Close .nav-button ul li a.menu-opened span {
           background: transparent;
           transition: background 0.2s ease-in-out; }
-        .Header-Close .nav-button ul li.menu-opened span::before {
+        .Header-Close .nav-button ul li a.menu-opened span::before {
           transform: translateY(0) rotate(45deg); }
-        .Header-Close .nav-button ul li.menu-opened span::after {
+        .Header-Close .nav-button ul li a.menu-opened span::after {
           transform: translateY(0) rotate(-45deg); }
-        .Header-Close .nav-button ul li.menu-closed span {
-          background: #fff;
+        .Header-Close .nav-button ul li a.menu-closed span {
+          background: #34414a;
           transition: background 0.2s ease-in-out; }
-        .Header-Close .nav-button ul li.menu-closed span::before {
-          transform: translateY(-9px) rotate(0); }
-        .Header-Close .nav-button ul li.menu-closed span::after {
-          transform: translateY(9px) rotate(0); }
-        .Header-Close .nav-button ul li a:hover {
-          color: #a65447;
-          text-decoration: none; }
+        .Header-Close .nav-button ul li a.menu-closed span::before {
+          transform: translateY(-8px) rotate(0); }
+        .Header-Close .nav-button ul li a.menu-closed span::after {
+          transform: translateY(8px) rotate(0); }
 
 .row {
   width: 1280px;
@@ -467,7 +468,7 @@ body {
     transition: text-decoration 0.2s ease-in-out, color 0.2s ease-in-out; }
   .row a.link-more {
     padding-left: 30px; }
-  .row a:hover {
+  .row a:hover, .row .Header-Close nav ul li, .Header-Close nav ul .row li {
     text-decoration: none;
     color: #34414a; }
   .row article#vedette {
@@ -485,7 +486,7 @@ body {
         background: #fff;
         position: relative;
         top: 0;
-        right: 35%;
+        right: 21%;
         padding: 1px 0 30px 30px; }
         .row article#vedette div .title .h5-like {
           margin: 30px 0 10px 0; }
@@ -638,7 +639,8 @@ body {
 div.button {
   display: inline-flex;
   flex-flow: row nowrap;
-  align-items: center; }
+  align-items: center;
+  letter-spacing: 1px; }
   div.button div {
     display: flex;
     flex-flow: row nowrap;
@@ -670,7 +672,7 @@ footer {
       margin-bottom: 15px; }
       footer div.Foo-left nav ul li a {
         text-decoration: none; }
-      footer div.Foo-left nav ul li a:hover {
+      footer div.Foo-left nav ul li a:hover, footer div.Foo-left .Header-Close nav ul li li, .Header-Close footer div.Foo-left nav ul li li {
         color: inherit;
         text-decoration: underline; }
   footer .Foo-center h5 {
@@ -686,5 +688,5 @@ footer {
         margin-right: 15px; }
     footer .Foo-right a:nth-child(2) {
       margin: 30px auto; }
-    footer .Foo-right a:hover {
+    footer .Foo-right a:hover, footer .Foo-right .Header-Close nav ul li, .Header-Close nav ul footer .Foo-right li {
       background: #fafafa; }
