@@ -1,5 +1,7 @@
 // IMPORT MONTSERRAT | OPEN SANS | FIRA MONO
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono|Montserrat:700|Open+Sans:400,400i,600');
+@import url('../bootstrap/fonts/glyphicons-halflings-regular.woff2');
+@import url('../bootstrap/fonts/glyphicons-halflings-regular.svg');
 
 // VAR FONT
 $montserrat: 'Montserrat';
@@ -387,6 +389,10 @@ p {
     background: $pure-white;
 }
 
+.glyphicons-button{
+    font-family: 'Glyphicons Halflings';
+}
+
 .button-text{
     font-family: $opensans;
     font-size: 16px;
@@ -451,9 +457,15 @@ body {
             @extend .inline-flex;
             width: 100%;
             list-style: none;
-            padding: 0;
+            @extend .reset-padding;
+            margin: 0;
             li{
-                margin: auto;
+                display: flex;
+                height: 100%;
+                margin: 0 auto 0 auto;
+                a{
+                    margin: auto;
+                }
             }
         }
         a{
@@ -461,6 +473,11 @@ body {
             font-size: 18px;
             text-align: center;
             color: $charcoal-grey;
+            transition: color 0.2s ease-in-out;
+        }
+        a:hover{
+            color: $earth;
+            text-decoration: none;
         }
     }
     
@@ -470,10 +487,84 @@ body {
         ul{
             @extend .inline-flex;
             width: 100%;
-            //list-style: none;
+            list-style: none;
             padding: 0;
             li{
                 margin: auto;
+                a.search-button{
+                    @extend .glyphicons-button;
+                }
+                a.menu-button{
+                	display: block;
+                    position: relative;
+                    width: 40px;
+                    height: 40px;
+                    background: $earth;
+                    span{
+                        display: block;
+                        position: absolute;
+	                    top: 50%;
+	                    left: 50%;
+	                    transform: translateY(-50%) translateX(-50%);
+                        width: 30px;
+                        height: 3px;
+                        background: $charcoal-grey;
+                        background: #fff;
+                        &::before, &::after{
+                            content: '';
+                            width: 30px;
+                            height: 3px;
+                            background: $charcoal-grey;
+                            background: #fff;
+                            position: absolute;
+	                        top: 0;
+	                        left: 0;
+                            transition: transform 0.2s ease-in-out;
+                        }
+                        &::before{
+                            transform: translateY(-8px);
+                        }
+                        &::after{
+                            transform: translateY(8px);
+                        }
+                    }
+                    &:hover{
+                        span::before{
+                            transform: translateY(-9px);
+                        }
+                        span::after{
+                            transform: translateY(9px);
+                        }
+                    }
+                    
+                }
+                a.menu-clicked{
+                    &.menu-opened{
+                        span{
+                            background: transparent;
+                            transition: background 0.2s ease-in-out;
+                        }
+                        span::before{
+                            transform: translateY(0) rotate(45deg);
+                        }
+                        span::after{
+                            transform: translateY(0) rotate(-45deg);
+                        }
+                    }
+                    &.menu-closed{
+                        span{
+                            background: #fff;
+                            transition: background 0.2s ease-in-out;
+                        }
+                        span::before{
+                            transform: translateY(-9px) rotate(0);
+                        }
+                        span::after{
+                            transform: translateY(9px) rotate(0);
+                        }
+                    }
+                }
+                
             }
         }
     }
@@ -541,8 +632,13 @@ body {
             padding: 20px 0 10px 0;
             letter-spacing: 1px;
         }
+        input[type="text"]{
+            background: $white-three;
+            width: 45%;
+        }
     }
     article#about-news{
+        display: flex;
         div#about-us{
             background: $white-two;
             padding: 30px;
@@ -568,7 +664,8 @@ body {
 	            margin: 0;
             }
             img{
-                width: 35.333333%;
+                align-self: flex-end;
+                width: 35%;
                 padding: 0 15px 0 0;
             }
             div{

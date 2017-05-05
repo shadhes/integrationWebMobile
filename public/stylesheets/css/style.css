@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Mono|Montserrat:700|Open+Sans:400,400i,600");
+@import url("../bootstrap/fonts/glyphicons-halflings-regular.woff2");
+@import url("../bootstrap/fonts/glyphicons-halflings-regular.svg");
 .iconcomment {
   font-family: archiwiki-icons;
   font-size: 150px;
@@ -302,7 +304,7 @@ p {
   flex-flow: column wrap;
   align-items: flex-start; }
 
-.reset-padding, #third-section article#last-edit, #third-section article#last-edit .col-md-6, #third-section article#last-edit .col-md-6 .breadcrumb a, #third-section aside, #third-section aside article, #third-section aside article .breadcrumb a, div.button div, footer div.Foo-left, footer div.Foo-left nav ul, footer .Foo-center, footer .Foo-center h5, footer .Foo-center p, footer .Foo-right {
+.reset-padding, .Header-Close nav ul, #third-section article#last-edit, #third-section article#last-edit .col-md-6, #third-section article#last-edit .col-md-6 .breadcrumb a, #third-section aside, #third-section aside article, #third-section aside article .breadcrumb a, div.button div, footer div.Foo-left, footer div.Foo-left nav ul, footer .Foo-center, footer .Foo-center h5, footer .Foo-center p, footer .Foo-right {
   padding: 0; }
 
 .edit-content, #third-section article#last-edit .col-md-6:nth-child(2) div.edit-content, #third-section aside article {
@@ -310,6 +312,9 @@ p {
   flex-flow: column nowrap;
   align-items: flex-start;
   background: #fff; }
+
+.glyphicons-button, .Header-Close .nav-button ul li a.search-button {
+  font-family: 'Glyphicons Halflings'; }
 
 .button-text, .button-more-info, div.button div button, div.button div button:hover, .button-social-media, footer .Foo-right a {
   font-family: "Open Sans";
@@ -359,21 +364,78 @@ body {
     .Header-Close nav ul {
       width: 100%;
       list-style: none;
-      padding: 0; }
+      margin: 0; }
       .Header-Close nav ul li {
-        margin: auto; }
+        display: flex;
+        height: 100%;
+        margin: 0 auto 0 auto; }
+        .Header-Close nav ul li a {
+          margin: auto; }
     .Header-Close nav a {
       font-family: "Open Sans";
       font-size: 18px;
       text-align: center;
-      color: #34414a; }
+      color: #34414a;
+      transition: color 0.2s ease-in-out; }
+    .Header-Close nav a:hover {
+      color: #a65447;
+      text-decoration: none; }
   .Header-Close .nav-button {
     width: 22%; }
     .Header-Close .nav-button ul {
       width: 100%;
+      list-style: none;
       padding: 0; }
       .Header-Close .nav-button ul li {
         margin: auto; }
+        .Header-Close .nav-button ul li a.menu-button {
+          display: block;
+          position: relative;
+          width: 40px;
+          height: 40px;
+          background: #a65447; }
+          .Header-Close .nav-button ul li a.menu-button span {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            width: 30px;
+            height: 3px;
+            background: #34414a;
+            background: #fff; }
+            .Header-Close .nav-button ul li a.menu-button span::before, .Header-Close .nav-button ul li a.menu-button span::after {
+              content: '';
+              width: 30px;
+              height: 3px;
+              background: #34414a;
+              background: #fff;
+              position: absolute;
+              top: 0;
+              left: 0;
+              transition: transform 0.2s ease-in-out; }
+            .Header-Close .nav-button ul li a.menu-button span::before {
+              transform: translateY(-8px); }
+            .Header-Close .nav-button ul li a.menu-button span::after {
+              transform: translateY(8px); }
+          .Header-Close .nav-button ul li a.menu-button:hover span::before {
+            transform: translateY(-9px); }
+          .Header-Close .nav-button ul li a.menu-button:hover span::after {
+            transform: translateY(9px); }
+        .Header-Close .nav-button ul li a.menu-clicked.menu-opened span {
+          background: transparent;
+          transition: background 0.2s ease-in-out; }
+        .Header-Close .nav-button ul li a.menu-clicked.menu-opened span::before {
+          transform: translateY(0) rotate(45deg); }
+        .Header-Close .nav-button ul li a.menu-clicked.menu-opened span::after {
+          transform: translateY(0) rotate(-45deg); }
+        .Header-Close .nav-button ul li a.menu-clicked.menu-closed span {
+          background: #fff;
+          transition: background 0.2s ease-in-out; }
+        .Header-Close .nav-button ul li a.menu-clicked.menu-closed span::before {
+          transform: translateY(-9px) rotate(0); }
+        .Header-Close .nav-button ul li a.menu-clicked.menu-closed span::after {
+          transform: translateY(9px) rotate(0); }
 
 .row {
   width: 1280px;
@@ -418,36 +480,42 @@ body {
       width: 100%;
       padding: 20px 0 10px 0;
       letter-spacing: 1px; }
-  .row article#about-news div#about-us {
-    background: #ebebeb;
-    padding: 30px; }
-    .row article#about-news div#about-us h3 {
-      padding: 0 0 15px 0;
-      margin: 0; }
-    .row article#about-news div#about-us p {
-      padding: 0 0 15px 0; }
-    .row article#about-news div#about-us a {
-      padding: 0; }
-  .row article#about-news div#last-news {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    background: #fff;
-    padding: 30px 30px 0 0; }
-    .row article#about-news div#last-news h3 {
-      padding: 0 30px 30px 30px;
-      margin: 0; }
-    .row article#about-news div#last-news img {
-      width: 35.333333%;
-      padding: 0 15px 0 0; }
-    .row article#about-news div#last-news div {
-      width: 64.666667%; }
-      .row article#about-news div#last-news div p {
+    .row article#recherche input[type="text"] {
+      background: #fafafa;
+      width: 45%; }
+  .row article#about-news {
+    display: flex; }
+    .row article#about-news div#about-us {
+      background: #ebebeb;
+      padding: 30px; }
+      .row article#about-news div#about-us h3 {
+        padding: 0 0 15px 0;
+        margin: 0; }
+      .row article#about-news div#about-us p {
         padding: 0 0 15px 0; }
-      .row article#about-news div#last-news div a {
+      .row article#about-news div#about-us a {
         padding: 0; }
-      .row article#about-news div#last-news div a:nth-child(3) {
-        float: right; }
+    .row article#about-news div#last-news {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: flex-start;
+      background: #fff;
+      padding: 30px 30px 0 0; }
+      .row article#about-news div#last-news h3 {
+        padding: 0 30px 30px 30px;
+        margin: 0; }
+      .row article#about-news div#last-news img {
+        align-self: flex-end;
+        width: 35%;
+        padding: 0 15px 0 0; }
+      .row article#about-news div#last-news div {
+        width: 64.666667%; }
+        .row article#about-news div#last-news div p {
+          padding: 0 0 15px 0; }
+        .row article#about-news div#last-news div a {
+          padding: 0; }
+        .row article#about-news div#last-news div a:nth-child(3) {
+          float: right; }
 
 #third-section article#last-edit {
   display: flex;
