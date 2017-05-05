@@ -1,7 +1,7 @@
 // IMPORT MONTSERRAT | OPEN SANS | FIRA MONO
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono|Montserrat:700|Open+Sans:400,400i,600');
 @import url('../bootstrap/fonts/glyphicons-halflings-regular.woff2');
-@import url('../bootstrap/fonts/glyphicons-halflings-regular.svg');
+@import url('../bootstrap/css/font-awesome.css');
 
 // VAR FONT
 $montserrat: 'Montserrat';
@@ -382,6 +382,10 @@ p {
     padding: 0;
 }
 
+.border-form{
+    border: solid 2px $dark-peach;
+}
+
 .edit-content{
     display: flex;
     flex-flow: column nowrap;
@@ -412,8 +416,11 @@ p {
 
 .button-social-media{
     @extend .button-text;
-    width: 75%;
-    padding: 15px;
+    display: inline-flex;
+	flex-flow: row nowrap;
+	align-items: center;
+    width: 60%;
+    padding: 15px 25px;
     text-transform: lowercase;
     background: transparent;
     border: solid 2px $white-three;
@@ -437,12 +444,15 @@ body {
         width:22%;
         margin: auto 0 auto 20px;
         padding-top: 10px;
+        
         h1{
             display: none;
         }
+        
         img{
             width: 80%;
         }
+        
         p{
             font-size: 13px;
             color: $slate-85;
@@ -453,31 +463,37 @@ body {
         @extend .inline-flex;
         width:56%;
         padding: 0;
+        
         ul{
             @extend .inline-flex;
             width: 100%;
             list-style: none;
             @extend .reset-padding;
             margin: 0;
+            
             li{
                 display: flex;
                 height: 100%;
                 margin: 0 auto 0 auto;
+                
                 a{
                     margin: auto;
                 }
             }
         }
+        
         a{
             font-family: $opensans;
             font-size: 18px;
             text-align: center;
             color: $charcoal-grey;
+            text-transform: uppercase;
             transition: color 0.2s ease-in-out;
-        }
-        a:hover{
-            color: $earth;
-            text-decoration: none;
+            
+            &:hover{
+                color: $earth;
+                text-decoration: none;
+            }
         }
     }
     
@@ -493,13 +509,14 @@ body {
                 margin: auto;
                 a.search-button{
                     @extend .glyphicons-button;
+                    font-size: 26px;
+                    color: $charcoal-grey;
                 }
                 a.menu-button{
                 	display: block;
                     position: relative;
                     width: 40px;
                     height: 40px;
-                    background: $earth;
                     span{
                         display: block;
                         position: absolute;
@@ -509,13 +526,11 @@ body {
                         width: 30px;
                         height: 3px;
                         background: $charcoal-grey;
-                        background: #fff;
                         &::before, &::after{
                             content: '';
                             width: 30px;
                             height: 3px;
                             background: $charcoal-grey;
-                            background: #fff;
                             position: absolute;
 	                        top: 0;
 	                        left: 0;
@@ -538,8 +553,17 @@ body {
                     }
                     
                 }
-                a.menu-clicked{
-                    &.menu-opened{
+                a.menu-button::after{
+                    content: 'Menu';
+	                position: absolute;
+	                top: 45px;
+	                left: -13%;
+	                font-size: 18px;
+	                color: #34414a;
+	                text-transform: uppercase;
+                    
+                }
+                &.menu-opened{
                         span{
                             background: transparent;
                             transition: background 0.2s ease-in-out;
@@ -551,20 +575,24 @@ body {
                             transform: translateY(0) rotate(-45deg);
                         }
                     }
-                    &.menu-closed{
-                        span{
-                            background: #fff;
-                            transition: background 0.2s ease-in-out;
-                        }
-                        span::before{
-                            transform: translateY(-9px) rotate(0);
-                        }
-                        span::after{
-                            transform: translateY(9px) rotate(0);
-                        }
+                    
+                &.menu-closed{
+                    span{
+                        background: $pure-white;
+                        transition: background 0.2s ease-in-out;
+                    }
+                    span::before{
+                        transform: translateY(-9px) rotate(0);
+                    }
+                    span::after{
+                        transform: translateY(9px) rotate(0);
                     }
                 }
                 
+                a:hover{
+                    color: $earth;
+                    text-decoration: none;
+                }
             }
         }
     }
@@ -574,33 +602,41 @@ body {
     @extend .flex-column-layout;
     width: 1280px;
     margin: 0;
+    
     p{
         margin: 0;
         padding: 15px 30px;
     }
+    
     a{
         color:$earth;
         text-decoration: underline;
         transition: text-decoration 0.2s ease-in-out, color 0.2s ease-in-out;
     }
+    
     a.link-more{
         padding-left: 30px;
     }
+    
     a:hover{
         text-decoration: none;
         color: $charcoal-grey;
     }
+    
     article#vedette{
         display: inline-flex;
         flex-flow: row wrap;
         align-items: flex-start;
         background: $pure-white;
         position: relative;
+        
         img{
             width: 57%;
         }
+        
         div{
             width: 43%;
+            
             .title{
                 width: 100%;
                 background: $pure-white;
@@ -608,14 +644,18 @@ body {
 	            top: 0;
 	            right: 35%;
 	            padding: 1px 0 30px 30px;
+                
                 .h3-like{
                     @extend .h3-like;
                 }
+                
                 .h5-like{
                     @extend .h5-like;
                     margin: 30px 0 10px 0;
                 }
+                
                 .breadcrumb{
+                    
                     span{
                         padding: 0 7px;
                     }
@@ -623,59 +663,107 @@ body {
             }
         }
     }
+    
     article#recherche{
         width: 100%;
+        position: relative;
         background: $earth;
+        
+        form{
+            display: inline-flex;
+            flex-flow: row wrap;
+            width: 100%;
+        }
+        
         label{
             @extend .label;
             width: 100%;
             padding: 20px 0 10px 0;
             letter-spacing: 1px;
         }
+        
         input[type="text"]{
+            width: 47%;
+            font-size: 16px;
+	        font-style: italic;
+            line-height: 1.2;
+	        padding: 13px 20px 12px 22px;
+	        margin: 0 0 40px auto;
             background: $white-three;
-            width: 45%;
+            @extend .border-form;
+            &:focus{
+                font-style: normal;
+            }
+        }
+        
+        button{
+            position: inherit;
+            font-size: 20px;
+        	padding: 12px 20px;
+            margin: 0 auto 40px 0;
+            background: $white-three;
+            @extend .border-form;
+            border-left: solid 0px transparent;
+        }
+        
+        a{
+            position: absolute;
+            top: 84px;
+            right: 160px;
+            color: $white-three;
         }
     }
+    
     article#about-news{
         display: flex;
+        
         div#about-us{
             background: $white-two;
             padding: 30px;
+            
             h3{
             	padding: 0 0 15px 0;
 	            margin: 0;
             }
+            
             p{
                 padding: 0 0 15px 0;
             }
+            
             a{
                 padding: 0;
             }
         }
+        
         div#last-news{
             display: flex;
             flex-flow: row wrap;
             align-items: flex-start;
             background: $pure-white;
             padding: 30px 30px 0 0;
+            
             h3{
             	padding: 0 30px 30px 30px;
 	            margin: 0;
             }
+            
             img{
                 align-self: flex-end;
                 width: 35%;
                 padding: 0 15px 0 0;
             }
+            
             div{
                 width: 64.666667%;
+                
                 p{
                     padding: 0 0 15px 0;
                 }
+                
                 a{
                     padding: 0;
                 }
+                
                 a:nth-child(3){
                     float: right;
                 }
@@ -686,46 +774,81 @@ body {
 
 #third-section{
     @extend .flex-row-layout;
-    article#last-edit{
+    
+    article[id="last-edit"]{
         display: flex;
         flex-flow: row wrap;
         align-items: flex-start;
         @extend .reset-padding;
+        
         .col-md-6{
             @extend .reset-padding;
             margin-bottom: 30px;
+            
             img{
                 width: 100%;
             }
+            
             h3{
                 padding: 30px 30px 10px 30px;
+                position: relative;
             }
+            
             a{
                 margin-bottom: 30px;
             }
+            
             .breadcrumb{
                 margin-left: 30px;
+                
                 a{
                     @extend .reset-padding;
                 }
+                
                 span{
                     padding: 0 7px;
                 }
             }
         }
+        
         .col-md-6:nth-child(odd){
             padding-right: 15px;
         }
+        
         .col-md-6:nth-child(even){
             padding-left: 15px;
         }
+        
+        .col-md-6:nth-child(odd),
+        .col-md-6:nth-child(even){
+            h3{
+                padding: 30px 30px 10px 30px;
+                position: relative;
+            }
+            
+            .h3-like::before,
+            .h3-like::after{
+                content: "";
+                position: absolute;
+                top: -15px;
+	            left: 15px;
+	            margin-left: 0;
+	            border-top: 0;
+	            border-left: 30px solid transparent;
+	            border-right: 30px solid transparent;
+                border-bottom: 30px solid #fff;
+            }
+        }
+        
         .col-md-6:nth-child(2){
             width: 100%;
             position: relative;
             padding: 0;
+            
             img{
                 width: 69%;
             }
+            
             div.edit-content{
                 @extend .edit-content;
                 position: absolute;
@@ -733,30 +856,50 @@ body {
                 bottom: 0;
                 right: 0;
                 width: 50%;
+                
+                .h3-like::before, .h3-like::after{
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-40%);
+                    margin-left: -15px;
+                    border-top: 30px solid transparent;
+                    border-left: 0;
+                    border-right: 30px solid #fff;
+                    border-bottom: 30px solid transparent;
+                }
             }
         }
     }
+    
     aside{
         display: flex;
         flex-flow: row wrap;
         align-items: flex-start;
         @extend .reset-padding;
         padding-left: 30px;
+        
         article{
             @extend .edit-content;
             @extend .reset-padding;
             margin-bottom: 30px;
+            
             p{
                 @extend .pcommentairesmall;
             }
+            
             a{
                 margin-bottom: 30px;
             }
+            
             .breadcrumb{
                 padding-left: 30px;
+                
                 a{
                     @extend .reset-padding;
                 }
+                
                 span{
                     padding: 0 7px;
                 }
@@ -769,6 +912,7 @@ div.button{
     display: inline-flex;
     flex-flow: row nowrap;
     align-items: center;
+    
     div{
         display: flex;
         flex-flow: row nowrap;
@@ -776,10 +920,12 @@ div.button{
         align-content: space-around;
         margin: 30px auto;
         @extend .reset-padding;
+        
         button{
             @extend .button-more-info;
             transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
         }
+        
         button:hover{
             @extend .button-more-info;
             background: $charcoal-grey;
@@ -798,53 +944,78 @@ footer{
     color: $white-three;
     text-align: center;
     margin-top: 30px;
-    padding: 30px;
+    padding: 30px 0;
+    
     div.Foo-left{
         @extend .reset-padding;
+        
         img{
             width: 50%;
         }
+        
         nav{
+            
             ul{
                 @extend .reset-padding;
                 list-style: none;
                 margin-top: 30px;
+                
                 li{
                     margin-bottom: 15px;
+                    
                     a{
                        @extend .nav-linkfooter;
                         text-decoration: none;
+                    }
+                    
+                    a:hover{
+                        @extend .nav-linkfooter;
+                        color: inherit;
+                        text-decoration: underline;
                     }
                 }
             } 
         }
     }
+    
     .Foo-center{
         @extend .reset-padding;
+        
         h5{
             @extend .reset-padding;
             @extend .h5-likeinvert;
             margin: 40px auto 70px auto;
         }
+        
         p{
             @extend .reset-padding;
             @extend .logo-defausse;
         }
     }
+    
     .Foo-right{
         display: flex;
         flex-flow: column wrap;
         align-items: center;
         @extend .reset-padding;
+        
         a{
             @extend .button-social-media;
             transition: background 0.2s ease-in-out;
+            
+            span{
+                font-size: 30px;
+            	margin-right: 15px;
+            }
         }
+        
         a:nth-child(2){
             margin: 30px auto;
         }
+        
         a:hover{
             background: $white-three;
         }
     }
 }
+

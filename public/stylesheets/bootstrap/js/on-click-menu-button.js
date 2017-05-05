@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    
     $('.menu-button').click(function(e){
         e.preventDefault();
         $this = ($this);
@@ -8,4 +9,7 @@ $(document).ready(function(){
             $this.removeClass('menu-closed').addClass('menu-opened');
         }
     });
+    
 });
+
+console.log('coucou je suis bien chargé !')
