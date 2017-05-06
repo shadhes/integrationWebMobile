@@ -478,9 +478,9 @@ body {
     background: #fff;
     position: relative; }
     .row article#vedette img {
-      width: 57%; }
+      padding: 0px; }
     .row article#vedette div {
-      width: 43%; }
+      padding: 0px; }
       .row article#vedette div .title {
         width: 100%;
         background: #fff;
@@ -581,6 +581,8 @@ body {
     padding-right: 15px; }
   #third-section article[id="last-edit"] .col-md-6:nth-child(even) {
     padding-left: 15px; }
+  #third-section article[id="last-edit"] .article {
+    max-width: 100%; }
   #third-section article[id="last-edit"] .col-md-6:nth-child(odd) h3,
   #third-section article[id="last-edit"] .col-md-6:nth-child(even) h3 {
     padding: 30px 30px 10px 30px;
@@ -598,12 +600,11 @@ body {
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
     border-bottom: 30px solid #fff; }
+  #third-section article[id="last-edit"] .last-modif {
+    overflow: hidden; }
   #third-section article[id="last-edit"] .col-md-6:nth-child(2) {
-    width: 100%;
     position: relative;
     padding: 0; }
-    #third-section article[id="last-edit"] .col-md-6:nth-child(2) img {
-      width: 69%; }
     #third-section article[id="last-edit"] .col-md-6:nth-child(2) div.edit-content {
       position: absolute;
       top: 0;
@@ -640,7 +641,7 @@ div.button {
   display: inline-flex;
   flex-flow: row nowrap;
   align-items: center;
-  letter-spacing: 1px; }
+  letter-spacing: 3px !important; }
   div.button div {
     display: flex;
     flex-flow: row nowrap;
@@ -648,6 +649,7 @@ div.button {
     align-content: space-around;
     margin: 30px auto; }
     div.button div button {
+      letter-spacing: 1px;
       transition: color 0.2s ease-in-out, background 0.2s ease-in-out; }
     div.button div button:hover {
       background: #34414a;
