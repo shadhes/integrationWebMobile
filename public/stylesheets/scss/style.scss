@@ -845,73 +845,38 @@ body {
             }
         }
 
-        // .col-md-6:nth-child(2){
-        //     position: relative;
-        //     padding: 0;
-        //
-        //     img{
-        //       padding: 0px;
-        //       height: 100%;
-        //     }
-        //
-        //     div.edit-content{
-        //         @extend .edit-content;
-        //         position: absolute;
-        //         top: 0;
-        //         bottom: 0;
-        //         right: 0;
-        //
-        //         .h3-like::before, .h3-like::after{
-        //             content: "";
-        //             position: absolute;
-        //             top: 50%;
-        //             left: 0;
-        //             transform: translateY(-40%);
-        //             margin-left: -15px;
-        //             border-top: 30px solid transparent;
-        //             border-left: 0;
-        //             border-right: 30px solid #fff;
-        //             border-bottom: 30px solid transparent;
-        //         }
-        //     }
-        // }
-      .last-modif {
-        overflow: hidden;
-      }
-      .azerty{
-
-       }
-        .col-md-6:nth-child(2){
-            position: relative;
-            padding: 0;
-
-             img {
-
-            }
-
+         .col-md-6:nth-child(2){
+             position: relative;
+             padding: 0;
+             width: 100%;
+        
+             img{
+               padding: 0px;
+               width: 69%;
+             }
+        
              div.edit-content{
-                @extend .edit-content;
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                right: 0;
-                width: 50%;
-
-                .h3-like::before, .h3-like::after{
-                    content: "";
-                    position: absolute;
-                    top: 50%;
-                    left: 0;
-                    transform: translateY(-40%);
-                    margin-left: -15px;
-                    border-top: 30px solid transparent;
-                    border-left: 0;
-                    border-right: 30px solid #fff;
-                    border-bottom: 30px solid transparent;
-                }
-            }
-        }
-
+                 @extend .edit-content;
+                 position: absolute;
+                 top: 0;
+                 bottom: 0;
+                 right: 0;
+                 left: 48%;
+        
+                 .h3-like::before, .h3-like::after{
+                     content: "";
+                     position: absolute;
+                     top: 50%;
+                     left: 0;
+                     transform: translateY(-40%);
+                     margin-left: -15px;
+                     border-top: 30px solid transparent;
+                     border-left: 0;
+                     border-right: 30px solid #fff;
+                     border-bottom: 30px solid transparent;
+                 }
+             }
+         }
     }
 
     aside{

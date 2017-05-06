@@ -600,17 +600,19 @@ body {
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
     border-bottom: 30px solid #fff; }
-  #third-section article[id="last-edit"] .last-modif {
-    overflow: hidden; }
   #third-section article[id="last-edit"] .col-md-6:nth-child(2) {
     position: relative;
-    padding: 0; }
+    padding: 0;
+    width: 100%; }
+    #third-section article[id="last-edit"] .col-md-6:nth-child(2) img {
+      padding: 0px;
+      width: 69%; }
     #third-section article[id="last-edit"] .col-md-6:nth-child(2) div.edit-content {
       position: absolute;
       top: 0;
       bottom: 0;
       right: 0;
-      width: 50%; }
+      left: 48%; }
       #third-section article[id="last-edit"] .col-md-6:nth-child(2) div.edit-content .h3-like::before, #third-section article[id="last-edit"] .col-md-6:nth-child(2) div.edit-content .h3-like::after {
         content: "";
         position: absolute;
