@@ -81,7 +81,7 @@ $blue-grey:  #273746;
     font-size: 25px;
     font-weight: bold;
     line-height: 1.32;
-    margin: 0px 0 10px 0;
+    margin: 0;
     color: $charcoal-grey;
 }
 
@@ -90,7 +90,7 @@ $blue-grey:  #273746;
     font-size: 20px;
     font-weight: bold;
     line-height: 1.3;
-    padding: 30px 30px 10px 30px;
+    padding: 30px 30px 0 30px;
     margin: 0;
     color: $charcoal-grey;
 }
@@ -429,6 +429,16 @@ a:hover{
     text-decoration: none;
 }
 
+.breadcrumb{
+            margin: 5px 30px;
+            a{
+                @extend .reset-padding;
+            }
+            span{
+                padding: 0 7px;
+            }
+        }
+
 // BODY
 body{
     background: #fafafa;
@@ -651,13 +661,13 @@ body{
                     @extend .h5-like;
                     margin: 30px 0 10px 0;
                 }
-
+                
                 .breadcrumb{
-
-                    span{
-                        padding: 0 7px;
-                    }
+                    margin-left: 0;
                 }
+                
+                
+                
             }
         }
     }
@@ -774,11 +784,8 @@ body{
     @extend .flex-row-layout;
 
     article[id="last-edit"]{
-        // display: flex;
-        // flex-flow: row wrap;
-        // align-items: flex-start;
         @extend .reset-padding;
-
+                
         .col-md-6{
             @extend .reset-padding;
             margin-bottom: 30px;
@@ -787,7 +794,7 @@ body{
                 width: 100%;
             }
             h3{
-                padding: 30px 30px 10px 30px;
+                padding: 30px 30px 0 30px;
                 position: relative;
             }
 
@@ -795,24 +802,14 @@ body{
                 margin-bottom: 30px;
             }
 
-            .breadcrumb{
-                margin-left: 30px;
-
-                a{
-                    @extend .reset-padding;
-                }
-
-                span{
-                    padding: 0 7px;
-                }
-            }
         }
         .col-md-12{
             @extend .reset-padding;
             position: relative;
             margin-bottom: 30px;
             h3{
-                padding: 30px 30px 10px 30px;
+                position: relative;
+                padding: 30px 30px 0 30px;
             }
             a{
                 padding: 30px 0px 10px 0px;
@@ -822,10 +819,23 @@ body{
             }
             .edit-content{
                position: absolute;
-               width: 50%;
-               height: 100%;
-               top: 0px;
-               right: 0px;
+               top: 0;
+               right: 0;
+               left: 48%;
+               bottom: 0;
+                
+                .h3-like::before, .h3-like::after{
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-40%);
+                    margin-left: -15px;
+                    border-top: 30px solid transparent;
+                    border-left: 0;
+                    border-right: 30px solid #fff;
+                    border-bottom: 30px solid transparent;
+                }
             }
           }
 
@@ -836,13 +846,11 @@ body{
         .col-md-6:nth-child(even){
             padding-left: 15px;
         }
-        // .article{
-        //   max-width: 100%;
-        // }
+
         .col-md-6:nth-child(odd),
         .col-md-6:nth-child(even){
             h3{
-                padding: 30px 30px 10px 30px;
+                padding: 30px 30px 0 30px;
                 position: relative;
             }
 
@@ -861,75 +869,17 @@ body{
             }
         }
 
-        // .col-md-6:nth-child(2){
-        //     position: relative;
-        //     padding: 0;
-        //
-        //     img{
-        //       padding: 0px;
-        //       height: 100%;
-        //     }
-        //
-        //     div.edit-content{
-        //         @extend .edit-content;
-        //         position: absolute;
-        //         top: 0;
-        //         bottom: 0;
-        //         right: 0;
-        //
-        //         .h3-like::before, .h3-like::after{
-        //             content: "";
-        //             position: absolute;
-        //             top: 50%;
-        //             left: 0;
-        //             transform: translateY(-40%);
-        //             margin-left: -15px;
-        //             border-top: 30px solid transparent;
-        //             border-left: 0;
-        //             border-right: 30px solid #fff;
-        //             border-bottom: 30px solid transparent;
-        //         }
-        //     }
-        // }
-
       .article:nth-of-type(1) {
-        // position: relative;
         overflow: hidden;
-        div{
-          padding: 0px;
+        
+          div{
+          @extend .reset-padding;
+              a.link-more{
+                  padding-left: 30px;
+              }
         }
-        // img {
-        //   transform: scale(1.45);
-        // }
+
       }
-
-        .col-md-6:nth-child(2){
-            position: relative;
-            padding: 0;
-
-             div.edit-content{
-                @extend .edit-content;
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                right: 0;
-                width: 50%;
-
-                .h3-like::before, .h3-like::after{
-                    content: "";
-                    position: absolute;
-                    top: 50%;
-                    left: 0;
-                    transform: translateY(-40%);
-                    margin-left: -15px;
-                    border-top: 30px solid transparent;
-                    border-left: 0;
-                    border-right: 30px solid #fff;
-                    border-bottom: 30px solid transparent;
-                }
-            }
-        }
-
     }
 
     aside{
@@ -947,21 +897,13 @@ body{
             p{
                 @extend .pcommentairesmall;
             }
-
+            
+            .breadcrumb{
+                margin-bottom: 0;
+            }
+            
             a{
                 margin-bottom: 30px;
-            }
-
-            .breadcrumb{
-                padding-left: 30px;
-
-                a{
-                    @extend .reset-padding;
-                }
-
-                span{
-                    padding: 0 7px;
-                }
             }
         }
     }

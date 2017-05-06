@@ -44,7 +44,7 @@
   font-size: 25px;
   font-weight: bold;
   line-height: 1.32;
-  margin: 0px 0 10px 0;
+  margin: 0;
   color: #34414a; }
 
 .h4-like {
@@ -52,7 +52,7 @@
   font-size: 20px;
   font-weight: bold;
   line-height: 1.3;
-  padding: 30px 30px 10px 30px;
+  padding: 30px 30px 0 30px;
   margin: 0;
   color: #34414a; }
 
@@ -294,13 +294,13 @@ a {
   flex-flow: column wrap;
   align-items: flex-start; }
 
-.reset-padding, .Header-Close nav ul, #third-section article[id="last-edit"], #third-section article[id="last-edit"] .col-md-6, #third-section article[id="last-edit"] .col-md-6 .breadcrumb a, #third-section article[id="last-edit"] .col-md-12, #third-section aside, #third-section aside article, #third-section aside article .breadcrumb a, div.button div, footer div.Foo-left, footer div.Foo-left nav ul, footer .Foo-center, footer .Foo-center h5, footer .Foo-center p, footer .Foo-right {
+.reset-padding, .breadcrumb a, .Header-Close nav ul, #third-section article[id="last-edit"], #third-section article[id="last-edit"] .col-md-6, #third-section article[id="last-edit"] .col-md-12, #third-section article[id="last-edit"] .article:nth-of-type(1) div, #third-section aside, #third-section aside article, div.button div, footer div.Foo-left, footer div.Foo-left nav ul, footer .Foo-center, footer .Foo-center h5, footer .Foo-center p, footer .Foo-right {
   padding: 0; }
 
 .border-form, .row article#recherche input[type="text"], .row article#recherche button {
   border: solid 2px #d96e5d; }
 
-.edit-content, #third-section article[id="last-edit"] .col-md-6:nth-child(2) div.edit-content, #third-section aside article {
+.edit-content, #third-section aside article {
   background: #fff;
   padding-bottom: 30px; }
 
@@ -335,6 +335,11 @@ a {
 a:hover, .Header-Close nav ul li {
   color: #a65447;
   text-decoration: none; }
+
+.breadcrumb {
+  margin: 5px 30px; }
+  .breadcrumb span {
+    padding: 0 7px; }
 
 body {
   background: #fafafa;
@@ -478,8 +483,8 @@ body {
         padding: 1px 0 30px 30px; }
         .row article#vedette div .title .h5-like {
           margin: 30px 0 10px 0; }
-        .row article#vedette div .title .breadcrumb span {
-          padding: 0 7px; }
+        .row article#vedette div .title .breadcrumb {
+          margin-left: 0; }
   .row article#recherche {
     width: 100%;
     position: relative;
@@ -553,30 +558,38 @@ body {
   #third-section article[id="last-edit"] .col-md-6 img {
     width: 100%; }
   #third-section article[id="last-edit"] .col-md-6 h3 {
-    padding: 30px 30px 10px 30px;
+    padding: 30px 30px 0 30px;
     position: relative; }
   #third-section article[id="last-edit"] .col-md-6 a {
     margin-bottom: 30px; }
-  #third-section article[id="last-edit"] .col-md-6 .breadcrumb {
-    margin-left: 30px; }
-    #third-section article[id="last-edit"] .col-md-6 .breadcrumb span {
-      padding: 0 7px; }
 
 #third-section article[id="last-edit"] .col-md-12 {
   position: relative;
   margin-bottom: 30px; }
   #third-section article[id="last-edit"] .col-md-12 h3 {
-    padding: 30px 30px 10px 30px; }
+    position: relative;
+    padding: 30px 30px 0 30px; }
   #third-section article[id="last-edit"] .col-md-12 a {
     padding: 30px 0px 10px 0px; }
   #third-section article[id="last-edit"] .col-md-12 img {
     width: 67%; }
-  #third-section article[id="last-edit"] .col-md-12 .edit-content, #third-section article[id="last-edit"] .col-md-12 .col-md-6:nth-child(2) div.edit-content, #third-section article[id="last-edit"] .col-md-6:nth-child(2) .col-md-12 div.edit-content, #third-section article[id="last-edit"] .col-md-12 aside article, #third-section aside article[id="last-edit"] .col-md-12 article {
+  #third-section article[id="last-edit"] .col-md-12 .edit-content, #third-section article[id="last-edit"] .col-md-12 aside article, #third-section aside article[id="last-edit"] .col-md-12 article {
     position: absolute;
-    width: 50%;
-    height: 100%;
-    top: 0px;
-    right: 0px; }
+    top: 0;
+    right: 0;
+    left: 48%;
+    bottom: 0; }
+    #third-section article[id="last-edit"] .col-md-12 .edit-content .h3-like::before, #third-section article[id="last-edit"] .col-md-12 aside article .h3-like::before, #third-section aside article[id="last-edit"] .col-md-12 article .h3-like::before, #third-section article[id="last-edit"] .col-md-12 aside .row article#vedette div .title .h3-like::before, .row #third-section article[id="last-edit"] .col-md-12 aside article#vedette div .title .h3-like::before, #third-section aside article[id="last-edit"] .col-md-12 .row article#vedette div .title .h3-like::before, .row #third-section aside article[id="last-edit"] .col-md-12 article#vedette div .title .h3-like::before, #third-section article[id="last-edit"] .col-md-12 .edit-content .h3-like::after, #third-section article[id="last-edit"] .col-md-12 aside article .h3-like::after, #third-section aside article[id="last-edit"] .col-md-12 article .h3-like::after, #third-section article[id="last-edit"] .col-md-12 aside .row article#vedette div .title .h3-like::after, .row #third-section article[id="last-edit"] .col-md-12 aside article#vedette div .title .h3-like::after, #third-section aside article[id="last-edit"] .col-md-12 .row article#vedette div .title .h3-like::after, .row #third-section aside article[id="last-edit"] .col-md-12 article#vedette div .title .h3-like::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-40%);
+      margin-left: -15px;
+      border-top: 30px solid transparent;
+      border-left: 0;
+      border-right: 30px solid #fff;
+      border-bottom: 30px solid transparent; }
 
 #third-section article[id="last-edit"] .col-md-6:nth-child(odd) {
   padding-right: 15px; }
@@ -586,7 +599,7 @@ body {
 
 #third-section article[id="last-edit"] .col-md-6:nth-child(odd) h3,
 #third-section article[id="last-edit"] .col-md-6:nth-child(even) h3 {
-  padding: 30px 30px 10px 30px;
+  padding: 30px 30px 0 30px;
   position: relative; }
 
 #third-section article[id="last-edit"] .col-md-6:nth-child(odd) .h3-like::before,
@@ -606,29 +619,8 @@ body {
 
 #third-section article[id="last-edit"] .article:nth-of-type(1) {
   overflow: hidden; }
-  #third-section article[id="last-edit"] .article:nth-of-type(1) div {
-    padding: 0px; }
-
-#third-section article[id="last-edit"] .col-md-6:nth-child(2) {
-  position: relative;
-  padding: 0; }
-  #third-section article[id="last-edit"] .col-md-6:nth-child(2) div.edit-content {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 50%; }
-    #third-section article[id="last-edit"] .col-md-6:nth-child(2) div.edit-content .h3-like::before, #third-section article[id="last-edit"] .col-md-6:nth-child(2) div.edit-content .h3-like::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 0;
-      transform: translateY(-40%);
-      margin-left: -15px;
-      border-top: 30px solid transparent;
-      border-left: 0;
-      border-right: 30px solid #fff;
-      border-bottom: 30px solid transparent; }
+  #third-section article[id="last-edit"] .article:nth-of-type(1) div a.link-more {
+    padding-left: 30px; }
 
 #third-section aside {
   display: flex;
@@ -637,12 +629,10 @@ body {
   padding-left: 30px; }
   #third-section aside article {
     margin-bottom: 30px; }
+    #third-section aside article .breadcrumb {
+      margin-bottom: 0; }
     #third-section aside article a {
       margin-bottom: 30px; }
-    #third-section aside article .breadcrumb {
-      padding-left: 30px; }
-      #third-section aside article .breadcrumb span {
-        padding: 0 7px; }
 
 div.button {
   display: inline-flex;
