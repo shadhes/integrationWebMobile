@@ -11,7 +11,6 @@
   font-size: 39px;
   font-weight: bold;
   line-height: 1.28;
-  color: #34414a;
   color: #34414a; }
 
 .h2-like {
@@ -19,13 +18,11 @@
   font-size: 31px;
   font-weight: bold;
   line-height: 1.29;
-  color: #34414a;
   color: #34414a; }
 
 .icon {
   font-family: archiwiki-icons;
   font-size: 30px;
-  color: #34414a;
   color: #34414a; }
 
 .h3-likeinvert {
@@ -33,7 +30,6 @@
   font-size: 25px;
   font-weight: bold;
   text-align: center;
-  color: #ebebeb;
   color: #ebebeb; }
 
 .label, .row article#recherche label {
@@ -94,7 +90,6 @@
   font-size: 18px;
   font-weight: bold;
   text-align: center;
-  color: #ebebeb;
   color: #ebebeb; }
 
 .buttonlarge {
@@ -102,20 +97,17 @@
   font-size: 18px;
   font-weight: 600;
   text-align: center;
-  color: #34414a;
   color: #34414a; }
 
 .social-link {
   font-family: "Open Sans";
   font-size: 18px;
   font-weight: 600;
-  color: #fafafa;
   color: #fafafa; }
 
 .nav-linkinvert {
   font-family: "Open Sans";
   font-size: 18px;
-  color: #fafafa;
   color: #fafafa; }
 
 .h5-likeinvert, footer .Foo-center h5 {
@@ -160,6 +152,9 @@ p {
   line-height: 1.5;
   text-align: left;
   color: #222a30; }
+
+a {
+  font-family: "Open Sans"; }
 
 .buttonlargemobile {
   font-family: "Open Sans";
@@ -230,14 +225,12 @@ p {
   font-size: 14px;
   line-height: 1.71;
   text-align: left;
-  color: #a65447;
   color: #a65447; }
 
 .nav-linkinverted {
   font-family: "Open Sans";
   font-size: 14px;
   text-align: center;
-  color: #fafafa;
   color: #fafafa; }
 
 .pcommentairesmall, #third-section aside article p {
@@ -252,7 +245,6 @@ p {
   font-size: 12px;
   font-weight: bold;
   line-height: 1.75;
-  color: #fafafa;
   color: #fafafa; }
 
 .h5-likemobile {
@@ -272,7 +264,6 @@ p {
   font-size: 12px;
   line-height: 1.5;
   text-align: left;
-  color: #a65447;
   color: #a65447; }
 
 .linkcontribsmall {
@@ -280,7 +271,6 @@ p {
   font-size: 10px;
   line-height: 1.5;
   text-align: center;
-  color: #a65447;
   color: #a65447; }
 
 .logo-defausse, footer .Foo-center p {
@@ -304,17 +294,15 @@ p {
   flex-flow: column wrap;
   align-items: flex-start; }
 
-.reset-padding, .Header-Close nav ul, #third-section article[id="last-edit"], #third-section article[id="last-edit"] .col-md-6, #third-section article[id="last-edit"] .col-md-6 .breadcrumb a, #third-section aside, #third-section aside article, #third-section aside article .breadcrumb a, div.button div, footer div.Foo-left, footer div.Foo-left nav ul, footer .Foo-center, footer .Foo-center h5, footer .Foo-center p, footer .Foo-right {
+.reset-padding, .Header-Close nav ul, #third-section article[id="last-edit"], #third-section article[id="last-edit"] .col-md-6, #third-section article[id="last-edit"] .col-md-6 .breadcrumb a, #third-section article[id="last-edit"] .col-md-12, #third-section aside, #third-section aside article, #third-section aside article .breadcrumb a, div.button div, footer div.Foo-left, footer div.Foo-left nav ul, footer .Foo-center, footer .Foo-center h5, footer .Foo-center p, footer .Foo-right {
   padding: 0; }
 
 .border-form, .row article#recherche input[type="text"], .row article#recherche button {
   border: solid 2px #d96e5d; }
 
 .edit-content, #third-section article[id="last-edit"] .col-md-6:nth-child(2) div.edit-content, #third-section aside article {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: flex-start;
-  background: #fff; }
+  background: #fff;
+  padding-bottom: 30px; }
 
 .glyphicons-button, .Header-Close .nav-button ul li a.search-button {
   font-family: 'Glyphicons Halflings'; }
@@ -382,7 +370,6 @@ body {
         .Header-Close nav ul li a {
           margin: auto; }
     .Header-Close nav a {
-      font-family: "Open Sans";
       font-size: 18px;
       text-align: center;
       color: #34414a;
@@ -467,7 +454,8 @@ body {
     text-decoration: underline;
     transition: text-decoration 0.2s ease-in-out, color 0.2s ease-in-out; }
   .row a.link-more {
-    padding-left: 30px; }
+    padding-left: 30px;
+    padding-bottom: 30px; }
   .row a:hover, .row .Header-Close nav ul li, .Header-Close nav ul .row li {
     text-decoration: none;
     color: #34414a; }
@@ -560,68 +548,87 @@ body {
         .row article#about-news div#last-news div a:nth-child(3) {
           float: right; }
 
-#third-section article[id="last-edit"] {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start; }
-  #third-section article[id="last-edit"] .col-md-6 {
-    margin-bottom: 30px; }
-    #third-section article[id="last-edit"] .col-md-6 img {
-      width: 100%; }
-    #third-section article[id="last-edit"] .col-md-6 h3 {
-      padding: 30px 30px 10px 30px;
-      position: relative; }
-    #third-section article[id="last-edit"] .col-md-6 a {
-      margin-bottom: 30px; }
-    #third-section article[id="last-edit"] .col-md-6 .breadcrumb {
-      margin-left: 30px; }
-      #third-section article[id="last-edit"] .col-md-6 .breadcrumb span {
-        padding: 0 7px; }
-  #third-section article[id="last-edit"] .col-md-6:nth-child(odd) {
-    padding-right: 15px; }
-  #third-section article[id="last-edit"] .col-md-6:nth-child(even) {
-    padding-left: 15px; }
-  #third-section article[id="last-edit"] .article {
-    max-width: 100%; }
-  #third-section article[id="last-edit"] .col-md-6:nth-child(odd) h3,
-  #third-section article[id="last-edit"] .col-md-6:nth-child(even) h3 {
+#third-section article[id="last-edit"] .col-md-6 {
+  margin-bottom: 30px; }
+  #third-section article[id="last-edit"] .col-md-6 img {
+    width: 100%; }
+  #third-section article[id="last-edit"] .col-md-6 h3 {
     padding: 30px 30px 10px 30px;
     position: relative; }
-  #third-section article[id="last-edit"] .col-md-6:nth-child(odd) .h3-like::before,
-  #third-section article[id="last-edit"] .col-md-6:nth-child(odd) .h3-like::after,
-  #third-section article[id="last-edit"] .col-md-6:nth-child(even) .h3-like::before,
-  #third-section article[id="last-edit"] .col-md-6:nth-child(even) .h3-like::after {
-    content: "";
+  #third-section article[id="last-edit"] .col-md-6 a {
+    margin-bottom: 30px; }
+  #third-section article[id="last-edit"] .col-md-6 .breadcrumb {
+    margin-left: 30px; }
+    #third-section article[id="last-edit"] .col-md-6 .breadcrumb span {
+      padding: 0 7px; }
+
+#third-section article[id="last-edit"] .col-md-12 {
+  position: relative;
+  margin-bottom: 30px; }
+  #third-section article[id="last-edit"] .col-md-12 h3 {
+    padding: 30px 30px 10px 30px; }
+  #third-section article[id="last-edit"] .col-md-12 a {
+    padding: 30px 0px 10px 0px; }
+  #third-section article[id="last-edit"] .col-md-12 img {
+    width: 67%; }
+  #third-section article[id="last-edit"] .col-md-12 .edit-content, #third-section article[id="last-edit"] .col-md-12 .col-md-6:nth-child(2) div.edit-content, #third-section article[id="last-edit"] .col-md-6:nth-child(2) .col-md-12 div.edit-content, #third-section article[id="last-edit"] .col-md-12 aside article, #third-section aside article[id="last-edit"] .col-md-12 article {
     position: absolute;
-    top: -15px;
-    left: 15px;
-    margin-left: 0;
-    border-top: 0;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-bottom: 30px solid #fff; }
-  #third-section article[id="last-edit"] .last-modif {
-    overflow: hidden; }
-  #third-section article[id="last-edit"] .col-md-6:nth-child(2) {
-    position: relative;
-    padding: 0; }
-    #third-section article[id="last-edit"] .col-md-6:nth-child(2) div.edit-content {
+    width: 50%;
+    height: 100%;
+    top: 0px;
+    right: 0px; }
+
+#third-section article[id="last-edit"] .col-md-6:nth-child(odd) {
+  padding-right: 15px; }
+
+#third-section article[id="last-edit"] .col-md-6:nth-child(even) {
+  padding-left: 15px; }
+
+#third-section article[id="last-edit"] .col-md-6:nth-child(odd) h3,
+#third-section article[id="last-edit"] .col-md-6:nth-child(even) h3 {
+  padding: 30px 30px 10px 30px;
+  position: relative; }
+
+#third-section article[id="last-edit"] .col-md-6:nth-child(odd) .h3-like::before,
+#third-section article[id="last-edit"] .col-md-6:nth-child(odd) .h3-like::after,
+#third-section article[id="last-edit"] .col-md-6:nth-child(even) .h3-like::before,
+#third-section article[id="last-edit"] .col-md-6:nth-child(even) .h3-like::after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  z-index: 99;
+  left: 15px;
+  margin-left: 0;
+  border-top: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid #fff; }
+
+#third-section article[id="last-edit"] .article:nth-of-type(1) {
+  overflow: hidden; }
+  #third-section article[id="last-edit"] .article:nth-of-type(1) div {
+    padding: 0px; }
+
+#third-section article[id="last-edit"] .col-md-6:nth-child(2) {
+  position: relative;
+  padding: 0; }
+  #third-section article[id="last-edit"] .col-md-6:nth-child(2) div.edit-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%; }
+    #third-section article[id="last-edit"] .col-md-6:nth-child(2) div.edit-content .h3-like::before, #third-section article[id="last-edit"] .col-md-6:nth-child(2) div.edit-content .h3-like::after {
+      content: "";
       position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      width: 50%; }
-      #third-section article[id="last-edit"] .col-md-6:nth-child(2) div.edit-content .h3-like::before, #third-section article[id="last-edit"] .col-md-6:nth-child(2) div.edit-content .h3-like::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-40%);
-        margin-left: -15px;
-        border-top: 30px solid transparent;
-        border-left: 0;
-        border-right: 30px solid #fff;
-        border-bottom: 30px solid transparent; }
+      top: 50%;
+      left: 0;
+      transform: translateY(-40%);
+      margin-left: -15px;
+      border-top: 30px solid transparent;
+      border-left: 0;
+      border-right: 30px solid #fff;
+      border-bottom: 30px solid transparent; }
 
 #third-section aside {
   display: flex;
