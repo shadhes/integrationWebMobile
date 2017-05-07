@@ -8,6 +8,7 @@ $montserrat: 'Montserrat';
 $opensans: 'Open Sans';
 $firamono: 'Fira Mono';
 
+
 // VAR COLOR
 $sea: #32a398;
 $greeny-blue: #3abdaf;
@@ -661,13 +662,13 @@ body{
                     @extend .h5-like;
                     margin: 30px 0 10px 0;
                 }
-                
+
                 .breadcrumb{
                     margin-left: 0;
                 }
-                
-                
-                
+
+
+
             }
         }
     }
@@ -785,7 +786,7 @@ body{
 
     article[id="last-edit"]{
         @extend .reset-padding;
-                
+
         .col-md-6{
             @extend .reset-padding;
             margin-bottom: 30px;
@@ -823,7 +824,7 @@ body{
                right: 0;
                left: 48%;
                bottom: 0;
-                
+
                 .h3-like::before, .h3-like::after{
                     content: "";
                     position: absolute;
@@ -871,7 +872,7 @@ body{
 
       .article:nth-of-type(1) {
         overflow: hidden;
-        
+
           div{
           @extend .reset-padding;
               a.link-more{
@@ -897,11 +898,11 @@ body{
             p{
                 @extend .pcommentairesmall;
             }
-            
+
             .breadcrumb{
                 margin-bottom: 0;
             }
-            
+
             a{
                 margin-bottom: 30px;
             }
