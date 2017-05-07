@@ -1,36 +1,6 @@
-// IMPORT MONTSERRAT | OPEN SANS | FIRA MONO
-@import url('https://fonts.googleapis.com/css?family=Fira+Mono|Montserrat:700|Open+Sans:400,400i,600');
-@import url('../bootstrap/fonts/glyphicons-halflings-regular.woff2');
-@import url('../bootstrap/css/font-awesome.css');
-
-// VAR FONT
-$montserrat: 'Montserrat';
-$opensans: 'Open Sans';
-$firamono: 'Fira Mono';
-
-
-// VAR COLOR
-$sea: #32a398;
-$greeny-blue: #3abdaf;
-$aqua-marine: #42d7c8;
-$slate: #455763;
-$charcoal-grey: #34414a;
-$adobe: #be6152;
-$earth: #a65447;
-$greyblue: #63b7ba;
-$dark-peach: #d96e5d;
-$seafoam-blue: #70cfd3;
-$white: #d2d2d2;
-$greyish: #b8b8b8;
-$white-two: #ebebeb;
-$tiffany-blue: #7eeaee;
-$white-three: #fafafa;
-$pure-white: #fff;
-$dark: #222a30;
-$slate-85: rgba(70, 87, 99, 0.85);
-
-// VAR COLOR ADD
-$blue-grey:  #273746;
+// IMPORT
+@import 'font.scss';
+@import 'color.scss';
 
 // TEXT STYLE
 .iconcomment {
@@ -399,7 +369,7 @@ a {
     font-family: $opensans;
     font-size: 16px;
     font-weight: 600;
-	  text-decoration: none;
+    text-decoration: none;
 }
 
 .button-more-info{
@@ -431,14 +401,14 @@ a:hover{
 }
 
 .breadcrumb{
-            margin: 5px 30px;
-            a{
-                @extend .reset-padding;
-            }
-            span{
-                padding: 0 7px;
-            }
-        }
+    margin: 5px 30px;
+    a{
+        @extend .reset-padding;
+    }
+    span{
+        padding: 0 7px;
+    }
+}
 
 // BODY
 body{
@@ -446,165 +416,7 @@ body{
     margin: 0 auto;
 }
 
-.Header-Close{
-    @extend .inline-flex;
-    width: 1280px;
-    height: 150px;
-
-    .logo{
-        display: flex;
-        flex-flow: column wrap;
-        width:22%;
-        margin: auto 0 auto 20px;
-        padding-top: 10px;
-
-        h1{
-            display: none;
-        }
-
-        img{
-            width: 80%;
-        }
-
-        p{
-            font-size: 13px;
-            color: $slate-85;
-        }
-    }
-
-    nav {
-        @extend .inline-flex;
-        width:56%;
-        padding: 0;
-
-        ul{
-            @extend .inline-flex;
-            width: 100%;
-            list-style: none;
-            @extend .reset-padding;
-            margin: 0;
-
-            li{
-                display: flex;
-                height: 100%;
-                margin: 0 auto 0 auto;
-
-                a{
-                    margin: auto;
-                }
-                @extend a:hover;
-            }
-        }
-
-        a{
-            font-size: 18px;
-            text-align: center;
-            color: $charcoal-grey;
-            text-transform: uppercase;
-            transition: color 0.2s ease-in-out;
-
-            &:hover{
-                color: $earth;
-                text-decoration: none;
-            }
-        }
-    }
-
-    .nav-button{
-        @extend .inline-flex;
-        width: 22%;
-        ul{
-            @extend .inline-flex;
-            width: 100%;
-            list-style: none;
-            padding: 0;
-            li{
-                margin: auto;
-                a.search-button{
-                    @extend .glyphicons-button;
-                    font-size: 26px;
-                    color: $charcoal-grey;
-                }
-                a.menu-button{
-                	display: block;
-                    position: relative;
-                    width: 40px;
-                    height: 40px;
-                    span{
-                        display: block;
-                        position: absolute;
-	                    top: 50%;
-	                    left: 50%;
-	                    transform: translateY(-50%) translateX(-50%);
-                        width: 30px;
-                        height: 3px;
-                        background: $charcoal-grey;
-                        &::before, &::after{
-                            content: '';
-                            width: 30px;
-                            height: 3px;
-                            background: $charcoal-grey;
-                            position: absolute;
-	                        top: 0;
-	                        left: 0;
-                            transition: transform 0.2s ease-in-out;
-                        }
-                        &::before{
-                            transform: translateY(-8px);
-                        }
-                        &::after{
-                            transform: translateY(8px);
-                        }
-                    }
-                    &:hover{
-                        span::before{
-                            transform: translateY(-9px);
-                        }
-                        span::after{
-                            transform: translateY(9px);
-                        }
-                    }
-
-                }
-                a.menu-button::after{
-                  content: 'Menu';
-	                position: absolute;
-	                top: 45px;
-	                left: -13%;
-	                font-size: 18px;
-	                color: #34414a;
-	                text-transform: uppercase;
-                }
-                a.menu-opened{
-                        span{
-                            background: transparent;
-                            transition: background 0.2s ease-in-out;
-                        }
-                        span::before{
-                            transform: translateY(0) rotate(45deg);
-                        }
-                        span::after{
-                            transform: translateY(0) rotate(-45deg);
-                        }
-                    }
-
-                a.menu-closed{
-                    span{
-                        background: $charcoal-grey;
-                        transition: background 0.2s ease-in-out;
-                    }
-                    span::before{
-                        transform: translateY(-8px) rotate(0);
-                    }
-                    span::after{
-                        transform: translateY(8px) rotate(0);
-                    }
-                }
-
-            }
-        }
-    }
-}
+@import 'header.scss';
 
 .row {
     @extend .flex-column-layout;
@@ -938,87 +750,4 @@ div.button{
     }
 }
 
-// FOOTER
-footer{
-    display: inline-flex;
-    flex-flow: row nowrap;
-    align-content: space-between;
-    width: 100%;
-    background-color: $charcoal-grey;
-    color: $white-three;
-    text-align: center;
-    margin-top: 30px;
-    padding: 30px 0;
-
-    div.Foo-left{
-        @extend .reset-padding;
-
-        img{
-            width: 50%;
-        }
-
-        nav{
-
-            ul{
-                @extend .reset-padding;
-                list-style: none;
-                margin-top: 30px;
-
-                li{
-                    margin-bottom: 15px;
-
-                    a{
-                       @extend .nav-linkfooter;
-                        text-decoration: none;
-                    }
-
-                    a:hover{
-                        @extend .nav-linkfooter;
-                        color: inherit;
-                        text-decoration: underline;
-                    }
-                }
-            }
-        }
-    }
-
-    .Foo-center{
-        @extend .reset-padding;
-
-        h5{
-            @extend .reset-padding;
-            @extend .h5-likeinvert;
-            margin: 40px auto 70px auto;
-        }
-
-        p{
-            @extend .reset-padding;
-            @extend .logo-defausse;
-        }
-    }
-
-    .Foo-right{
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        @extend .reset-padding;
-
-        a{
-            @extend .button-social-media;
-            transition: background 0.2s ease-in-out;
-
-            span{
-                font-size: 30px;
-            	margin-right: 15px;
-            }
-        }
-
-        a:nth-child(2){
-            margin: 30px auto;
-        }
-
-        a:hover{
-            background: $white-three;
-        }
-    }
-}
+@import 'footer.scss';

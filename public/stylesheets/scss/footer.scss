@@ -1,30 +1,85 @@
+
 // FOOTER
+footer{
+    display: inline-flex;
+    flex-flow: row nowrap;
+    align-content: space-between;
+    width: 100%;
+    background-color: $charcoal-grey;
+    color: $white-three;
+    text-align: center;
+    margin-top: 30px;
+    padding: 30px 0;
 
+    div.Foo-left{
+        @extend .reset-padding;
 
-// VAR FONT
-$montserrat: 'Montserrat';
-$opensans: 'Open Sans';
-$firamono: 'Fira Mono';
+        img{
+            width: 50%;
+        }
 
-// VAR COLOR
-$sea: #32a398;
-$greeny-blue: #3abdaf;
-$aqua-marine: #42d7c8;
-$slate: #455763;
-$charcoal-grey: #34414a;
-$adobe: #be6152;
-$earth: #a65447;
-$greyblue: #63b7ba;
-$dark-peach: #d96e5d;
-$seafoam-blue: #70cfd3;
-$white: #d2d2d2;
-$greyish: #b8b8b8;
-$white-two: #ebebeb;
-$tiffany-blue: #7eeaee;
-$white-three: #fafafa;
-$pure-white: #fff;
-$dark: #222a30;
-$slate-85: rgba(70, 87, 99, 0.85);
+        nav{
 
-// VAR COLOR ADD
-$blue-grey:  #273746;
+            ul{
+                @extend .reset-padding;
+                list-style: none;
+                margin-top: 30px;
+
+                li{
+                    margin-bottom: 15px;
+
+                    a{
+                       @extend .nav-linkfooter;
+                        text-decoration: none;
+                    }
+
+                    a:hover{
+                        @extend .nav-linkfooter;
+                        color: inherit;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .Foo-center{
+        @extend .reset-padding;
+
+        h5{
+            @extend .reset-padding;
+            @extend .h5-likeinvert;
+            margin: 40px auto 70px auto;
+        }
+
+        p{
+            @extend .reset-padding;
+            @extend .logo-defausse;
+        }
+    }
+
+    .Foo-right{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        @extend .reset-padding;
+
+        a{
+            @extend .button-social-media;
+            transition: background 0.2s ease-in-out;
+
+            span{
+                font-size: 30px;
+            	margin-right: 15px;
+            }
+        }
+
+        a:nth-child(2){
+            margin: 30px auto;
+        }
+
+        a:hover{
+            background: $white-three;
+        }
+    }
+}

@@ -9,7 +9,7 @@ module.exports = function(grunt) {
         files: [{
           "expand": true,
           "cwd": "public/stylesheets/scss/",
-          "src": ["*.scss"],
+          "src": ["style.scss"],
           "dest": "public/stylesheets/css",
           "ext": ".css"
         }]
@@ -26,15 +26,15 @@ module.exports = function(grunt) {
       // specific options
     },
     all: {
-        src: ["public/stylesheets/css/*.css"],
+        src: ["public/stylesheets/css/style.css"],
         dest: "public/stylesheets/css/compiled.css"
     },
   }
 
   })
 
-  grunt.loadNpmTasks('grunt-contrib-sass')
-  grunt.loadNpmTasks('grunt-contrib-watch')
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-concat-css');
-  grunt.registerTask('default', ['sass:dist'])
+  grunt.registerTask('default', ['sass:dist']);
 }
