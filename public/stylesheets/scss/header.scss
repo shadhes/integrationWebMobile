@@ -1,3 +1,7 @@
+header{
+    position: relative;    
+}
+
 .Header-Close{
     @extend .inline-flex;
     width: 1280px;
@@ -128,17 +132,25 @@
 	                text-transform: uppercase;
                 }
                 a.menu-opened{
+                    span{
+                        background: transparent;
+                        transition: background 0.2s ease-in-out;
+                    }
+                    span::before{
+                        transform: translateY(0) rotate(45deg);
+                    }
+                    span::after{
+                        transform: translateY(0) rotate(-45deg);
+                    }
+                    
+                    &:hover{
                         span{
-                            background: transparent;
-                            transition: background 0.2s ease-in-out;
-                        }
-                        span::before{
-                            transform: translateY(0) rotate(45deg);
-                        }
-                        span::after{
-                            transform: translateY(0) rotate(-45deg);
+                            background: $charcoal-grey;
+                            transition-delay: 0.2s;
                         }
                     }
+                    
+                }
 
                 a.menu-closed{
                     span{
@@ -156,4 +168,77 @@
             }
         }
     }
+}
+
+header{
+    
+    div.col-md-12{
+        @extend .reset-padding;
+    }
+    
+}
+
+.sub-menu{
+    
+    display: flex;
+        background: $slate;
+        color: $white-three;
+        ul{
+            list-style: none;
+            padding: 0 0 0 40px;
+            margin: 40px 0;
+        }
+        
+        a{
+            color: $white-three;
+        }
+    
+    ul li{
+        @extend .nav-linkinvert;
+        margin-bottom: 10px;
+    }
+    
+    ul.col-md-3 li:nth-child(1),
+    ul.col-md-7 li:nth-child(1){
+        @extend .title-sub-menu;
+    }
+    
+    ul.col-md-2 li:nth-child(1){
+        display: block;
+        width: 75%;
+		margin: 0 auto 30px auto;
+        
+        img{
+            width: 100%;
+	        border-radius: 50%;
+        	border: solid 5px #fafafa;
+        }
+    }
+    
+    ul.col-md-2{
+        padding: 0 40px 0 0;
+    }
+    
+    ul.col-md-2 li{
+        text-align: center;
+    }
+    
+}
+
+.sub-block-closed{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-25%);
+    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+}
+
+.sub-block-opened{
+    position: absolute;
+    top: 0;
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.2s ease-in, opacity 0.2s ease-in;
 }

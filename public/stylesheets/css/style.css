@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Fira+Mono|Montserrat:700|Open+Sans:400,400i,600");
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono|Montserrat:600,700|Open+Sans:400,400i,600");
 @import url("../bootstrap/fonts/glyphicons-halflings-regular.woff2");
 @import url("../bootstrap/css/font-awesome.css");
 .iconcomment {
@@ -10,7 +10,7 @@
 .h1-like {
   font-family: "Montserrat";
   font-size: 39px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.28;
   color: #34414a;
 }
@@ -18,7 +18,7 @@
 .h2-like {
   font-family: "Montserrat";
   font-size: 31px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.29;
   color: #34414a;
 }
@@ -32,15 +32,15 @@
 .h3-likeinvert {
   font-family: "Montserrat";
   font-size: 25px;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
   color: #ebebeb;
 }
 
-.label, .row article#recherche label {
+.label, article.recherche label {
   font-family: "Montserrat";
   font-size: 25px;
-  font-weight: bold;
+  font-weight: 600;
   text-align: center;
   color: #ebebeb;
 }
@@ -48,7 +48,7 @@
 .h3-like, .row article#vedette div .title .h3-like {
   font-family: "Montserrat";
   font-size: 25px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.32;
   margin: 0;
   color: #34414a;
@@ -57,7 +57,7 @@
 .h4-like {
   font-family: "Montserrat";
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.3;
   padding: 30px 30px 0 30px;
   margin: 0;
@@ -67,7 +67,7 @@
 .h4-likeinvert {
   font-family: "Montserrat";
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.3;
   color: #273746;
 }
@@ -77,13 +77,12 @@
   font-size: 20px;
   text-align: center;
   color: #d96e5d;
-  color: #d96e5d;
 }
 
 .h3-likemobile {
   font-family: "Montserrat";
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.22;
   color: #273746;
 }
@@ -91,7 +90,7 @@
 .h3-likemobilealign-center {
   font-family: "Montserrat";
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.22;
   text-align: center;
   color: #273746;
@@ -100,7 +99,7 @@
 .h3-likeinvertmobile {
   font-family: "Montserrat";
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
   color: #ebebeb;
 }
@@ -120,7 +119,18 @@
   color: #fafafa;
 }
 
-.nav-linkinvert {
+.title-sub-menu, .sub-menu ul.col-md-3 li:nth-child(1),
+.sub-menu ul.col-md-7 li:nth-child(1) {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #fafafa;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.nav-linkinvert, .sub-menu ul li {
   font-family: "Open Sans";
   font-size: 18px;
   color: #fafafa;
@@ -129,16 +139,17 @@
 .h5-likeinvert, footer .Foo-center h5 {
   font-family: "Montserrat";
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 1.31;
   text-align: center;
   color: #fafafa;
+  letter-spacing: 0.75px;
 }
 
 .h5-like, .row article#vedette div .title .h5-like {
   font-family: "Montserrat";
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.31;
   color: #34414a;
 }
@@ -287,7 +298,7 @@ a {
 .h5-likemobile {
   font-family: "Montserrat";
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.75;
   color: #273746;
 }
@@ -339,11 +350,11 @@ a {
   align-items: flex-start;
 }
 
-.reset-padding, .breadcrumb a, .Header-Close nav ul, #third-section article[id="last-edit"], #third-section article[id="last-edit"] .col-md-6, #third-section article[id="last-edit"] .col-md-12, #third-section article[id="last-edit"] .article:nth-of-type(1) div, #third-section aside, #third-section aside article, div.button div, footer div.Foo-left, footer div.Foo-left nav ul, footer .Foo-center, footer .Foo-center h5, footer .Foo-center p, footer .Foo-right {
+.reset-padding, .breadcrumb a, .Header-Close nav ul, header div.col-md-12, #third-section article[id="last-edit"], #third-section article[id="last-edit"] .col-md-6, #third-section article[id="last-edit"] .col-md-12, #third-section article[id="last-edit"] .article:nth-of-type(1) div, #third-section aside, #third-section aside article, div.button div, footer div.Foo-left, footer div.Foo-left nav ul, footer .Foo-center, footer .Foo-center h5, footer .Foo-center p, footer .Foo-right {
   padding: 0;
 }
 
-.border-form, .row article#recherche input[type="text"], .row article#recherche button {
+.border-form, article.recherche input[type="text"], article.recherche button {
   border: solid 2px #d96e5d;
 }
 
@@ -376,8 +387,8 @@ a {
   display: inline-flex;
   flex-flow: row nowrap;
   align-items: center;
-  width: 60%;
-  padding: 15px 25px;
+  width: 52%;
+  padding: 15px;
   text-transform: lowercase;
   background: transparent;
   border: solid 2px #fafafa;
@@ -399,6 +410,10 @@ a:hover, .Header-Close nav ul li {
 body {
   background: #fafafa;
   margin: 0 auto;
+}
+
+header {
+  position: relative;
 }
 
 .Header-Close {
@@ -522,6 +537,10 @@ body {
 .Header-Close .nav-button ul li a.menu-opened span::after {
   transform: translateY(0) rotate(-45deg);
 }
+.Header-Close .nav-button ul li a.menu-opened:hover span, .Header-Close .nav-button nav ul li li.menu-opened span, .Header-Close nav .nav-button ul li li.menu-opened span {
+  background: #34414a;
+  transition-delay: 0.2s;
+}
 .Header-Close .nav-button ul li a.menu-closed span {
   background: #34414a;
   transition: background 0.2s ease-in-out;
@@ -531,6 +550,99 @@ body {
 }
 .Header-Close .nav-button ul li a.menu-closed span::after {
   transform: translateY(8px) rotate(0);
+}
+
+.sub-menu {
+  display: flex;
+  background: #455763;
+  color: #fafafa;
+}
+.sub-menu ul {
+  list-style: none;
+  padding: 0 0 0 40px;
+  margin: 40px 0;
+}
+.sub-menu a {
+  color: #fafafa;
+}
+.sub-menu ul li {
+  margin-bottom: 10px;
+}
+.sub-menu ul.col-md-2 li:nth-child(1) {
+  display: block;
+  width: 75%;
+  margin: 0 auto 30px auto;
+}
+.sub-menu ul.col-md-2 li:nth-child(1) img {
+  width: 100%;
+  border-radius: 50%;
+  border: solid 5px #fafafa;
+}
+.sub-menu ul.col-md-2 {
+  padding: 0 40px 0 0;
+}
+.sub-menu ul.col-md-2 li {
+  text-align: center;
+}
+
+.sub-block-closed {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-25%);
+  transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+}
+
+.sub-block-opened {
+  position: absolute;
+  top: 0;
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 0.2s ease-in, opacity 0.2s ease-in;
+}
+
+article.recherche {
+  width: 100%;
+  position: relative;
+  background: #a65447;
+}
+article.recherche form {
+  display: inline-flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+article.recherche label {
+  width: 100%;
+  padding: 20px 0 10px 0;
+  letter-spacing: 1px;
+}
+article.recherche input[type="text"] {
+  width: 47%;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.2;
+  padding: 13px 20px 12px 22px;
+  margin: 0 0 40px auto;
+  background: #fafafa;
+}
+article.recherche input[type="text"]:focus {
+  font-style: normal;
+}
+article.recherche button {
+  position: inherit;
+  font-size: 20px;
+  padding: 12px 20px;
+  margin: 0 auto 40px 0;
+  background: #fafafa;
+  border-left: solid 0px transparent;
+}
+article.recherche a {
+  position: absolute;
+  top: 84px;
+  right: 160px;
+  color: #fafafa;
 }
 
 .row {
@@ -580,47 +692,6 @@ body {
 }
 .row article#vedette div .title .breadcrumb {
   margin-left: 0;
-}
-.row article#recherche {
-  width: 100%;
-  position: relative;
-  background: #a65447;
-}
-.row article#recherche form {
-  display: inline-flex;
-  flex-flow: row wrap;
-  width: 100%;
-}
-.row article#recherche label {
-  width: 100%;
-  padding: 20px 0 10px 0;
-  letter-spacing: 1px;
-}
-.row article#recherche input[type="text"] {
-  width: 47%;
-  font-size: 16px;
-  font-style: italic;
-  line-height: 1.2;
-  padding: 13px 20px 12px 22px;
-  margin: 0 0 40px auto;
-  background: #fafafa;
-}
-.row article#recherche input[type="text"]:focus {
-  font-style: normal;
-}
-.row article#recherche button {
-  position: inherit;
-  font-size: 20px;
-  padding: 12px 20px;
-  margin: 0 auto 40px 0;
-  background: #fafafa;
-  border-left: solid 0px transparent;
-}
-.row article#recherche a {
-  position: absolute;
-  top: 84px;
-  right: 160px;
-  color: #fafafa;
 }
 .row article#about-news {
   display: flex;
@@ -751,15 +822,30 @@ body {
   flex-flow: row wrap;
   align-items: flex-start;
   padding-left: 30px;
+  position: relative;
 }
 #third-section aside article {
   margin-bottom: 30px;
+  position: relative;
 }
 #third-section aside article .breadcrumb {
   margin-bottom: 0;
 }
 #third-section aside article a {
   margin-bottom: 30px;
+}
+#third-section aside article::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  width: 130px;
+  height: 130px;
+  opacity: 0.05;
+  background-image: url("../../images/icon-bulle.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotateZ(-5deg);
 }
 
 div.button {

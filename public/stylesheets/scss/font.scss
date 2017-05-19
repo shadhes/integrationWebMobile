@@ -1,5 +1,5 @@
 //IMPORT TYPEFACES
-@import url('https://fonts.googleapis.com/css?family=Fira+Mono|Montserrat:700|Open+Sans:400,400i,600');
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono|Montserrat:600,700|Open+Sans:400,400i,600');
 @import url('../bootstrap/fonts/glyphicons-halflings-regular.woff2');
 @import url('../bootstrap/css/font-awesome.css');
 
@@ -7,3 +7,10 @@
 $montserrat: 'Montserrat';
 $opensans: 'Open Sans';
 $firamono: 'Fira Mono';
+
+//VAR WEIGHT
+$monserrat-bold: 700;
+$monserrat-semibold: 600;
+$opensans-regular: 400;
+$opensans-italic: italic;
+$opensans-semibold: 600;

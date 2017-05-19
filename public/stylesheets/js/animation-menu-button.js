@@ -24,6 +24,7 @@ $(document).ready(function(){
       });
     };
 
+
 });
 
 console.log('coucou je suis bien chargé !')

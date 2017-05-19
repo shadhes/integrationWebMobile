@@ -1,414 +1,8 @@
 // IMPORT
 @import 'font.scss';
 @import 'color.scss';
+@import 'basic-styles.scss';
 
-// TEXT STYLE
-.iconcomment {
-    font-family: archiwiki-icons;
-    font-size: 150px;
-    color: rgba(235, 235, 235, 0.45);
-}
-
-.h1-like {
-    font-family: $montserrat;
-    font-size: 39px;
-    font-weight: bold;
-    line-height: 1.28;
-    color: $charcoal-grey;
-}
-
-.h2-like {
-    font-family: $montserrat;
-    font-size: 31px;
-    font-weight: bold;
-    line-height: 1.29;
-    color: $charcoal-grey;
-}
-
-.icon {
-    font-family: archiwiki-icons;
-    font-size: 30px;
-    color: $charcoal-grey;
-}
-
-.h3-likeinvert {
-    font-family: $montserrat;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    color: $white-two;
-}
-
-.label {
-    font-family: $montserrat;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    color: $white-two;
-}
-
-.h3-like {
-    font-family: $montserrat;
-    font-size: 25px;
-    font-weight: bold;
-    line-height: 1.32;
-    margin: 0;
-    color: $charcoal-grey;
-}
-
-.h4-like {
-    font-family: $montserrat;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 1.3;
-    padding: 30px 30px 0 30px;
-    margin: 0;
-    color: $charcoal-grey;
-}
-
-.h4-likeinvert {
-    font-family: $montserrat;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 1.3;
-    color: $blue-grey;
-
-}
-
-.bandeauicon {
-    font-family: archiwiki-icons;
-    font-size: 20px;
-    text-align: center;
-    color: #d96e5d;
-    color: $dark-peach;
-}
-
-.h3-likemobile {
-    font-family: $montserrat;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 1.22;
-    color: $blue-grey;
-}
-
-.h3-likemobilealign-center {
-    font-family: $montserrat;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 1.22;
-    text-align: center;
-    color: $blue-grey;
-}
-
-.h3-likeinvertmobile {
-    font-family: $montserrat;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    color: $white-two;
-}
-
-.buttonlarge {
-    font-family: $opensans;
-    font-size: 18px;
-    font-weight: 600;
-    text-align: center;
-    color: $charcoal-grey;
-}
-
-.social-link {
-    font-family: $opensans;
-    font-size: 18px;
-    font-weight: 600;
-    color: $white-three;
-}
-
-.nav-linkinvert {
-    font-family: $opensans;
-    font-size: 18px;
-    color: $white-three;
-}
-
-.h5-likeinvert {
-    font-family: $montserrat;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 1.31;
-    text-align: center;
-    color: $white-three;
-}
-
-.h5-like {
-    font-family: $montserrat;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 1.31;
-    color: $charcoal-grey;
-
-}
-
-textarea {
-    font-family: $firamono;
-    font-size: 16px;
-    line-height: 1;
-    text-align: left;
-    color: $dark;
-}
-
-.linkhover {
-    font-family: $opensans;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: left;
-    color: $adobe;
-}
-
-.link {
-    font-family: $opensans;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: left;
-    color: $earth;
-}
-
-p {
-    font-family: $opensans;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: left;
-    color: $dark;
-}
-
-a {
-    font-family: $opensans;
-
-}
-
-.buttonlargemobile {
-    font-family: $opensans;
-    font-size: 14px;
-    font-weight: 600;
-    text-align: center;
-    color: $charcoal-grey;
-}
-
-.databox__info {
-    font-family: $opensans;
-    font-size: 14px;
-    font-weight: 600;
-    color: $charcoal-grey;
-}
-
-.pmobile {
-    font-family: $opensans;
-    font-size: 14px;
-    line-height: 1.43;
-    text-align: left;
-    color: $dark;
-}
-
-.cat-linkssmallmobile {
-    font-family: $opensans;
-    font-size: 14px;
-    color: $earth;
-}
-
-.cat-linkssmall {
-    font-family: $opensans;
-    font-size: 14px;
-    color: $earth;
-}
-
-.linksmallfade {
-    font-family: $opensans;
-    font-size: 14px;
-    line-height: 1.71;
-    text-align: right;
-    color: $earth;
-}
-
-.linkcontrib {
-    font-family: $opensans;
-    font-size: 14px;
-    line-height: 1.71;
-    text-align: right;
-    color: $earth;
-}
-
-.nav-linkfooter {
-    font-family: $opensans;
-    font-size: 14px;
-    line-height: 1.43;
-    text-align: center;
-    color: $white-three;
-}
-
-.figcaption {
-    font-family: $opensans;
-    font-size: 14px;
-    text-align: center;
-    color: #465763;
-}
-
-.psmall {
-    font-family: $opensans;
-    font-size: 14px;
-    line-height: 1.71;
-    text-align: left;
-    color: #465763;
-}
-
-.Text-Style {
-    font-family: $opensans;
-    font-size: 14px;
-    line-height: 1.71;
-    text-align: left;
-    color: $earth;
-}
-
-.nav-linkinverted {
-    font-family: $opensans;
-    font-size: 14px;
-    text-align: center;
-    color: $white-three;
-}
-
-.pcommentairesmall {
-    font-family: $opensans;
-    font-size: 14px;
-    font-style: italic;
-    line-height: 1.71;
-    color: #465763;
-}
-
-.h5-likeinvertmobile {
-    font-family: $montserrat;
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 1.75;
-    color: $white-three;
-}
-
-.h5-likemobile {
-    font-family: $montserrat;
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 1.75;
-    color: $blue-grey;
-}
-
-.databox__label {
-    font-family: $opensans;
-    font-size: 12px;
-    color: #465763;
-}
-
-.linksmallmobile {
-    font-family: $opensans;
-    font-size: 12px;
-    line-height: 1.5;
-    text-align: left;
-    color: $earth;
-}
-
-.linkcontribsmall {
-    font-family: $opensans;
-    font-size: 10px;
-    line-height: 1.5;
-    text-align: center;
-    color: $earth;
-}
-
-.logo-defausse{
-    font-family: $firamono;
-    font-size: 16px;
-    text-align: center;
-    color: #fafafa;
-}
-
-//EXTEND STYLES
-.inline-flex{
-    display: inline-flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-}
-
-.flex-row-layout{
-    display: inline-flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-}
-
-.flex-column-layout{
-	display: flex;
-  flex-flow: column wrap;
-	align-items: flex-start;
-}
-
-.reset-padding{
-    padding: 0;
-}
-
-.border-form{
-    border: solid 2px $dark-peach;
-}
-
-.edit-content{
-    // display: flex;
-    // flex-flow: column nowrap;
-    // align-items: flex-start;
-    background: $pure-white;
-    padding-bottom: 30px;
-}
-
-.glyphicons-button{
-    font-family: 'Glyphicons Halflings';
-}
-
-.button-text{
-    font-family: $opensans;
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.button-more-info{
-    @extend .button-text;
-    margin: auto;
-    padding: 12px 20px;
-    text-transform: uppercase;
-    background: transparent;
-    border: solid 2px rgba(70, 87, 99, 0.65);
-    color: $charcoal-grey;
-}
-
-.button-social-media{
-    @extend .button-text;
-    display: inline-flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    width: 60%;
-    padding: 15px 25px;
-    text-transform: lowercase;
-    background: transparent;
-    border: solid 2px $white-three;
-    color: $white-three;
-}
-
-a:hover{
-    color: $earth;
-    text-decoration: none;
-}
-
-.breadcrumb{
-    margin: 5px 30px;
-    a{
-        @extend .reset-padding;
-    }
-    span{
-        padding: 0 7px;
-    }
-}
 
 // BODY
 body{
@@ -417,6 +11,54 @@ body{
 }
 
 @import 'header.scss';
+
+article.recherche{
+    width: 100%;
+    position: relative;
+    background: $earth;
+       
+    form{
+        display: inline-flex;
+        flex-flow: row wrap;
+        width: 100%;
+       }
+       
+    label{
+        @extend .label;
+        width: 100%;
+        padding: 20px 0 10px 0;
+        letter-spacing: 1px;
+       }
+    input[type="text"]{
+        width: 47%;
+        font-size: 16px;
+        font-style: italic;
+        line-height: 1.2;
+        padding: 13px 20px 12px 22px;
+        margin: 0 0 40px auto;
+        background: $white-three;
+        @extend .border-form;
+        
+        &:focus{
+            font-style: normal;
+        }
+    }
+    button{
+        position: inherit;
+        font-size: 20px;
+       	padding: 12px 20px;
+        margin: 0 auto 40px 0;
+        background: $white-three;
+        @extend .border-form;
+        border-left: solid 0px transparent;
+    }
+    a{
+        position: absolute;
+        top: 84px;
+        right: 160px;
+        color: $white-three;
+    }
+}
 
 .row {
     @extend .flex-column-layout;
@@ -482,56 +124,6 @@ body{
 
 
             }
-        }
-    }
-
-    article#recherche{
-        width: 100%;
-        position: relative;
-        background: $earth;
-
-        form{
-            display: inline-flex;
-            flex-flow: row wrap;
-            width: 100%;
-        }
-
-        label{
-            @extend .label;
-            width: 100%;
-            padding: 20px 0 10px 0;
-            letter-spacing: 1px;
-        }
-
-        input[type="text"]{
-            width: 47%;
-            font-size: 16px;
-            font-style: italic;
-            line-height: 1.2;
-            padding: 13px 20px 12px 22px;
-            margin: 0 0 40px auto;
-            background: $white-three;
-            @extend .border-form;
-            &:focus{
-                font-style: normal;
-            }
-        }
-
-        button{
-            position: inherit;
-            font-size: 20px;
-        	  padding: 12px 20px;
-            margin: 0 auto 40px 0;
-            background: $white-three;
-            @extend .border-form;
-            border-left: solid 0px transparent;
-        }
-
-        a{
-            position: absolute;
-            top: 84px;
-            right: 160px;
-            color: $white-three;
         }
     }
 
@@ -701,11 +293,13 @@ body{
         align-items: flex-start;
         @extend .reset-padding;
         padding-left: 30px;
-
+        position: relative;
+        
         article{
             @extend .edit-content;
             @extend .reset-padding;
             margin-bottom: 30px;
+            position: relative;
 
             p{
                 @extend .pcommentairesmall;
@@ -718,6 +312,20 @@ body{
             a{
                 margin-bottom: 30px;
             }
+        }
+        
+        article::before{
+            content: '';
+            position: absolute;
+            left: 15px;
+            bottom: 15px;
+            width: 130px;
+            height: 130px;
+            opacity: 0.05;
+            background-image: url('../../images/icon-bulle.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            transform: rotateZ(-5deg);
         }
     }
 }

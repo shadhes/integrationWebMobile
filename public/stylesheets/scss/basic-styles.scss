@@ -1,0 +1,414 @@
+// TEXT STYLE
+.iconcomment {
+    font-family: archiwiki-icons;
+    font-size: 150px;
+    color: rgba(235, 235, 235, 0.45);
+}
+
+.h1-like {
+    font-family: $montserrat;
+    font-size: 39px;
+    font-weight: $monserrat-bold;
+    line-height: 1.28;
+    color: $charcoal-grey;
+}
+
+.h2-like {
+    font-family: $montserrat;
+    font-size: 31px;
+    font-weight: $monserrat-bold;
+    line-height: 1.29;
+    color: $charcoal-grey;
+}
+
+.icon {
+    font-family: archiwiki-icons;
+    font-size: 30px;
+    color: $charcoal-grey;
+}
+
+.h3-likeinvert {
+    font-family: $montserrat;
+    font-size: 25px;
+    font-weight: $monserrat-bold;
+    text-align: center;
+    color: $white-two;
+}
+
+.label {
+    font-family: $montserrat;
+    font-size: 25px;
+    font-weight: $monserrat-semibold;
+    text-align: center;
+    color: $white-two;
+}
+
+.h3-like {
+    font-family: $montserrat;
+    font-size: 25px;
+    font-weight: $monserrat-bold;
+    line-height: 1.32;
+    margin: 0;
+    color: $charcoal-grey;
+}
+
+.h4-like {
+    font-family: $montserrat;
+    font-size: 20px;
+    font-weight: $monserrat-bold;
+    line-height: 1.3;
+    padding: 30px 30px 0 30px;
+    margin: 0;
+    color: $charcoal-grey;
+}
+
+.h4-likeinvert {
+    font-family: $montserrat;
+    font-size: 20px;
+    font-weight: $monserrat-bold;
+    line-height: 1.3;
+    color: $blue-grey;
+
+}
+
+.bandeauicon {
+    font-family: archiwiki-icons;
+    font-size: 20px;
+    text-align: center;
+    color: $dark-peach;
+}
+
+.h3-likemobile {
+    font-family: $montserrat;
+    font-size: 18px;
+    font-weight: $monserrat-bold;
+    line-height: 1.22;
+    color: $blue-grey;
+}
+
+.h3-likemobilealign-center {
+    font-family: $montserrat;
+    font-size: 18px;
+    font-weight: $monserrat-bold;
+    line-height: 1.22;
+    text-align: center;
+    color: $blue-grey;
+}
+
+.h3-likeinvertmobile {
+    font-family: $montserrat;
+    font-size: 18px;
+    font-weight: $monserrat-bold;
+    text-align: center;
+    color: $white-two;
+}
+
+.buttonlarge {
+    font-family: $opensans;
+    font-size: 18px;
+    font-weight: $opensans-semibold;
+    text-align: center;
+    color: $charcoal-grey;
+}
+
+.social-link {
+    font-family: $opensans;
+    font-size: 18px;
+    font-weight: $opensans-semibold;
+    color: $white-three;
+}
+
+.title-sub-menu{
+    font-family: $montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: $white-three;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.nav-linkinvert {
+    font-family: $opensans;
+    font-size: 18px;
+    color: $white-three;
+}
+
+.h5-likeinvert {
+    font-family: $montserrat;
+    font-size: 16px;
+    font-weight: $monserrat-semibold;
+    line-height: 1.31;
+    text-align: center;
+    color: $white-three;
+    letter-spacing: 0.75px;
+}
+
+.h5-like {
+    font-family: $montserrat;
+    font-size: 16px;
+    font-weight: $monserrat-bold;
+    line-height: 1.31;
+    color: $charcoal-grey;
+
+}
+
+textarea {
+    font-family: $firamono;
+    font-size: 16px;
+    line-height: 1;
+    text-align: left;
+    color: $dark;
+}
+
+.linkhover {
+    font-family: $opensans;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: $adobe;
+}
+
+.link {
+    font-family: $opensans;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: $earth;
+}
+
+p {
+    font-family: $opensans;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: $dark;
+}
+
+a {
+    font-family: $opensans;
+
+}
+
+.buttonlargemobile {
+    font-family: $opensans;
+    font-size: 14px;
+    font-weight: $opensans-semibold;
+    text-align: center;
+    color: $charcoal-grey;
+}
+
+.databox__info {
+    font-family: $opensans;
+    font-size: 14px;
+    font-weight: $opensans-semibold;
+    color: $charcoal-grey;
+}
+
+.pmobile {
+    font-family: $opensans;
+    font-size: 14px;
+    line-height: 1.43;
+    text-align: left;
+    color: $dark;
+}
+
+.cat-linkssmallmobile {
+    font-family: $opensans;
+    font-size: 14px;
+    color: $earth;
+}
+
+.cat-linkssmall {
+    font-family: $opensans;
+    font-size: 14px;
+    color: $earth;
+}
+
+.linksmallfade {
+    font-family: $opensans;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: right;
+    color: $earth;
+}
+
+.linkcontrib {
+    font-family: $opensans;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: right;
+    color: $earth;
+}
+
+.nav-linkfooter {
+    font-family: $opensans;
+    font-size: 14px;
+    line-height: 1.43;
+    text-align: center;
+    color: $white-three;
+}
+
+.figcaption {
+    font-family: $opensans;
+    font-size: 14px;
+    text-align: center;
+    color: #465763;
+}
+
+.psmall {
+    font-family: $opensans;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: left;
+    color: #465763;
+}
+
+.Text-Style {
+    font-family: $opensans;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: left;
+    color: $earth;
+}
+
+.nav-linkinverted {
+    font-family: $opensans;
+    font-size: 14px;
+    text-align: center;
+    color: $white-three;
+}
+
+.pcommentairesmall {
+    font-family: $opensans;
+    font-size: 14px;
+    font-style: $opensans-italic;
+    line-height: 1.71;
+    color: #465763;
+}
+
+.h5-likeinvertmobile {
+    font-family: $montserrat;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.75;
+    color: $white-three;
+}
+
+.h5-likemobile {
+    font-family: $montserrat;
+    font-size: 12px;
+    font-weight: $monserrat-bold;
+    line-height: 1.75;
+    color: $blue-grey;
+}
+
+.databox__label {
+    font-family: $opensans;
+    font-size: 12px;
+    color: #465763;
+}
+
+.linksmallmobile {
+    font-family: $opensans;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: left;
+    color: $earth;
+}
+
+.linkcontribsmall {
+    font-family: $opensans;
+    font-size: 10px;
+    line-height: 1.5;
+    text-align: center;
+    color: $earth;
+}
+
+.logo-defausse{
+    font-family: $firamono;
+    font-size: 16px;
+    text-align: center;
+    color: $white-three;
+}
+
+//EXTEND STYLES
+.inline-flex{
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.flex-row-layout{
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.flex-column-layout{
+	display: flex;
+  flex-flow: column wrap;
+	align-items: flex-start;
+}
+
+.reset-padding{
+    padding: 0;
+}
+
+.border-form{
+    border: solid 2px $dark-peach;
+}
+
+.edit-content{
+    background: $pure-white;
+    padding-bottom: 30px;
+}
+
+.glyphicons-button{
+    font-family: 'Glyphicons Halflings';
+}
+
+.button-text{
+    font-family: $opensans;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.button-more-info{
+    @extend .button-text;
+    margin: auto;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    background: transparent;
+    border: solid 2px rgba(70, 87, 99, 0.65);
+    color: $charcoal-grey;
+}
+
+.button-social-media{
+    @extend .button-text;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 52%;
+    padding: 15px;
+    text-transform: lowercase;
+    background: transparent;
+    border: solid 2px $white-three;
+    color: $white-three;
+}
+
+a:hover{
+    color: $earth;
+    text-decoration: none;
+}
+
+.breadcrumb{
+    margin: 5px 30px;
+    a{
+        @extend .reset-padding;
+    }
+    span{
+        padding: 0 7px;
+    }
+}
