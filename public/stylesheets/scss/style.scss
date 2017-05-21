@@ -125,7 +125,9 @@ article.recherche{
     }
 
     article#about-news{
-          width: 100%;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
         div#about-us{
             background: $white-two;
             padding: 30px;

@@ -350,7 +350,7 @@ a {
   align-items: flex-start;
 }
 
-.reset-padding, .breadcrumb a, .Header-Close nav ul, header div.col-md-12, #third-section article[id="last-edit"], #third-section article[id="last-edit"] .col-md-6, #third-section article[id="last-edit"] .col-md-12, #third-section article[id="last-edit"] .article:nth-of-type(1) div, #third-section aside, #third-section aside article, div.button div, footer div.Foo-left, footer div.Foo-left nav ul, footer .Foo-center, footer .Foo-center h5, footer .Foo-center p, footer .Foo-right {
+.reset-padding, .breadcrumb a, .Header-Close nav ul, #third-section article[id="last-edit"], #third-section article[id="last-edit"] .col-md-6, #third-section article[id="last-edit"] .col-md-12, #third-section article[id="last-edit"] .article:nth-of-type(1) div, #third-section aside, #third-section aside article, div.button div, footer div.Foo-left, footer div.Foo-left nav ul, footer .Foo-center, footer .Foo-center h5, footer .Foo-center p, footer .Foo-right {
   padding: 0;
 }
 
@@ -410,10 +410,6 @@ a:hover, .Header-Close nav ul li {
 body {
   background: #fafafa;
   margin: 0 auto;
-}
-
-header {
-  position: relative;
 }
 
 .Header-Close {
@@ -554,9 +550,11 @@ header {
 .Header-Close .nav-button ul li a.menu-closed span::after {
   transform: translateY(8px) rotate(0);
 }
+.Header-Close .nav-button ul li:nth-child(2) {
+  margin-top: -15px;
+}
 
 .sub-menu {
-  display: flex;
   background: #455763;
   color: #fafafa;
 }
@@ -588,6 +586,10 @@ header {
   text-align: center;
 }
 
+#sub-search {
+  display: none;
+}
+
 .sub-block-closed {
   display: none;
   visibility: hidden;
@@ -598,7 +600,7 @@ header {
 
 .sub-block-opened {
   position: absolute;
-  top: 0;
+  top: 150px;
   display: flex;
   visibility: visible;
   opacity: 1;
@@ -696,6 +698,8 @@ article.recherche a {
 }
 .row article#about-news {
   width: 100%;
+  display: flex;
+  align-items: flex-end;
 }
 .row article#about-news div#about-us {
   background: #ebebeb;

@@ -1,7 +1,3 @@
-header{
-    position: relative;
-}
-
 .Header-Close{
     @extend .inline-flex;
     width: 1280px;
@@ -169,32 +165,26 @@ header{
                 }
 
             }
+            
+            li:nth-child(2){
+                margin-top: -15px;
+            }
         }
     }
-}
-
-header{
-
-    div.col-md-12{
-        @extend .reset-padding;
-    }
-
 }
 
 .sub-menu{
+    background: $slate;
+    color: $white-three;
+    ul{
+        list-style: none;
+        padding: 0 0 0 40px;
+        margin: 40px 0;
+    }
 
-    display: flex;
-        background: $slate;
+    a{
         color: $white-three;
-        ul{
-            list-style: none;
-            padding: 0 0 0 40px;
-            margin: 40px 0;
-        }
-
-        a{
-            color: $white-three;
-        }
+    }
 
     ul li{
         @extend .nav-linkinvert;
@@ -228,6 +218,10 @@ header{
 
 }
 
+#sub-search{
+    display: none;
+}
+
 .sub-block-closed{
     display: none;
     visibility: hidden;
@@ -238,7 +232,7 @@ header{
 
 .sub-block-opened{
     position: absolute;
-    top: 0;
+    top: 150px;
     display: flex;
     visibility: visible;
     opacity: 1;
