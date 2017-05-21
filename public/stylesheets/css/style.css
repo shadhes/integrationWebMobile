@@ -734,6 +734,7 @@ article.recherche a {
 }
 .row article#vedette div {
   padding: 0px;
+  background: #fff;
 }
 .row article#vedette div .title {
   width: 121%;
