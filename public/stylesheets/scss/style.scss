@@ -16,13 +16,13 @@ article.recherche{
     width: 100%;
     position: relative;
     background: $earth;
-       
+
     form{
         display: inline-flex;
         flex-flow: row wrap;
         width: 100%;
        }
-       
+
     label{
         @extend .label;
         width: 100%;
@@ -38,7 +38,7 @@ article.recherche{
         margin: 0 0 40px auto;
         background: $white-three;
         @extend .border-form;
-        
+
         &:focus{
             font-style: normal;
         }
@@ -87,12 +87,9 @@ article.recherche{
     }
 
     article#vedette{
-        display: inline-flex;
-        flex-flow: row wrap;
-        align-items: flex-start;
         background: $pure-white;
         position: relative;
-
+        width: 100%;
         img{
             padding: 0px;
         }
@@ -128,8 +125,7 @@ article.recherche{
     }
 
     article#about-news{
-        display: flex;
-
+          width: 100%;
         div#about-us{
             background: $white-two;
             padding: 30px;
@@ -138,20 +134,16 @@ article.recherche{
             	padding: 0 0 15px 0;
 	            margin: 0;
             }
-
             p{
                 padding: 0 0 15px 0;
             }
-
             a{
                 padding: 0;
             }
         }
 
         div#last-news{
-            display: flex;
-            flex-flow: row wrap;
-            align-items: flex-start;
+
             background: $pure-white;
             padding: 30px 30px 0 0;
 
@@ -159,9 +151,7 @@ article.recherche{
             	padding: 0 30px 30px 30px;
 	            margin: 0;
             }
-
             img{
-                align-self: flex-end;
                 width: 35%;
                 padding: 0 15px 0 0;
             }
@@ -288,13 +278,13 @@ article.recherche{
     }
 
     aside{
-        display: flex;
-        flex-flow: row wrap;
-        align-items: flex-start;
+        // display: flex;
+        // flex-flow: row wrap;
+        // align-items: flex-start;
         @extend .reset-padding;
         padding-left: 30px;
         position: relative;
-        
+
         article{
             @extend .edit-content;
             @extend .reset-padding;
@@ -313,7 +303,7 @@ article.recherche{
                 margin-bottom: 30px;
             }
         }
-        
+
         article::before{
             content: '';
             position: absolute;

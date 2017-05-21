@@ -1,5 +1,5 @@
 header{
-    position: relative;    
+    position: relative;
 }
 
 .Header-Close{
@@ -29,7 +29,8 @@ header{
     }
 
     nav {
-        @extend .inline-flex;
+        margin-top: 62.500px;
+        // @extend .inline-flex;
         width:56%;
         padding: 0;
 
@@ -67,10 +68,12 @@ header{
     }
 
     .nav-button{
-        @extend .inline-flex;
+        // @extend .inline-flex;
+        margin-top: 62.500px;
         width: 22%;
         ul{
             @extend .inline-flex;
+            margin: 0px;
             width: 100%;
             list-style: none;
             padding: 0;
@@ -142,14 +145,14 @@ header{
                     span::after{
                         transform: translateY(0) rotate(-45deg);
                     }
-                    
+
                     &:hover{
                         span{
                             background: $charcoal-grey;
                             transition-delay: 0.2s;
                         }
                     }
-                    
+
                 }
 
                 a.menu-closed{
@@ -171,15 +174,15 @@ header{
 }
 
 header{
-    
+
     div.col-md-12{
         @extend .reset-padding;
     }
-    
+
 }
 
 .sub-menu{
-    
+
     display: flex;
         background: $slate;
         color: $white-three;
@@ -188,41 +191,41 @@ header{
             padding: 0 0 0 40px;
             margin: 40px 0;
         }
-        
+
         a{
             color: $white-three;
         }
-    
+
     ul li{
         @extend .nav-linkinvert;
         margin-bottom: 10px;
     }
-    
+
     ul.col-md-3 li:nth-child(1),
     ul.col-md-7 li:nth-child(1){
         @extend .title-sub-menu;
     }
-    
+
     ul.col-md-2 li:nth-child(1){
         display: block;
         width: 75%;
 		margin: 0 auto 30px auto;
-        
+
         img{
             width: 100%;
 	        border-radius: 50%;
         	border: solid 5px #fafafa;
         }
     }
-    
+
     ul.col-md-2{
         padding: 0 40px 0 0;
     }
-    
+
     ul.col-md-2 li{
         text-align: center;
     }
-    
+
 }
 
 .sub-block-closed{

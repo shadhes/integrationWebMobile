@@ -332,7 +332,7 @@ a {
   color: #fafafa;
 }
 
-.inline-flex, .Header-Close, .Header-Close nav, .Header-Close nav ul, .Header-Close .nav-button, .Header-Close .nav-button ul {
+.inline-flex, .Header-Close, .Header-Close nav ul, .Header-Close .nav-button ul {
   display: inline-flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -438,6 +438,7 @@ header {
   color: rgba(70, 87, 99, 0.85);
 }
 .Header-Close nav {
+  margin-top: 62.500px;
   width: 56%;
   padding: 0;
 }
@@ -466,9 +467,11 @@ header {
   text-decoration: none;
 }
 .Header-Close .nav-button {
+  margin-top: 62.500px;
   width: 22%;
 }
 .Header-Close .nav-button ul {
+  margin: 0px;
   width: 100%;
   list-style: none;
   padding: 0;
@@ -667,11 +670,9 @@ article.recherche a {
   color: #34414a;
 }
 .row article#vedette {
-  display: inline-flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
   background: #fff;
   position: relative;
+  width: 100%;
 }
 .row article#vedette img {
   padding: 0px;
@@ -694,7 +695,7 @@ article.recherche a {
   margin-left: 0;
 }
 .row article#about-news {
-  display: flex;
+  width: 100%;
 }
 .row article#about-news div#about-us {
   background: #ebebeb;
@@ -711,9 +712,6 @@ article.recherche a {
   padding: 0;
 }
 .row article#about-news div#last-news {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
   background: #fff;
   padding: 30px 30px 0 0;
 }
@@ -722,7 +720,6 @@ article.recherche a {
   margin: 0;
 }
 .row article#about-news div#last-news img {
-  align-self: flex-end;
   width: 35%;
   padding: 0 15px 0 0;
 }
@@ -818,9 +815,6 @@ article.recherche a {
   padding-left: 30px;
 }
 #third-section aside {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
   padding-left: 30px;
   position: relative;
 }
