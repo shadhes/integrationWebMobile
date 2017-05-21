@@ -3,6 +3,7 @@
     @extend .inline-flex;
     width: 1280px;
     height: 150px;
+    z-index: 200;
 
     .logo{
         display: flex;
@@ -166,15 +167,24 @@
                     width:  1280px;
                     background-color: #455763;
                 }
-                .menu-nav-search {
+                #menu02{
                     position: absolute;
-                    bottom: -286px;
-                    z-index: 100;
                     left: 0px;
-                    z-index: 100;
-                    height: 286px;
-                    width:  1280px;
-                }
+                    }
+                    .menu-nav-search {
+                        position: relative;
+                        z-index: 100;
+                        height: 286px;
+                        width:  1280px;
+                        .recherche {
+                            top: 50px;
+                            left: 0px;
+                            height: 158px;
+                            position: absolute;
+                        }
+                    }
+
+
                 .menu-closed{
                     display: none;
                 }
@@ -201,7 +211,7 @@
                 margin-top: -15px;
             }
         }
-        
+
         div#menu01{
             background: $slate;
             color: $white-three;
@@ -211,50 +221,50 @@
                 padding: 0 0 0 40px;
                 margin: 40px 0;
             }
-            
+
             ul.col-md-3{
                 width: 25%;
             }
-            
+
             ul.col-md-7{
                 width: 58.33333333%;
             }
-            
+
             ul.col-md-2{
                 width: 16.66666667%;
             }
-            
+
             a{
                 color: $white-three;
             }
-        
+
             ul li{
                 @extend .nav-linkinvert;
                 margin-bottom: 10px;
-                
+
             }
-        
+
             ul.col-md-3 li:nth-child(1),
             ul.col-md-7 li:nth-child(1){
                 @extend .title-sub-menu;
             }
-        
+
             ul.col-md-2 li:nth-child(1){
                 display: block;
                 width: 75%;
 	        	margin: 0 auto 30px auto;
-        
+
                 img{
                     width: 100%;
 	                border-radius: 50%;
                 	border: solid 5px #fafafa;
                 }
             }
-        
+
             ul.col-md-2{
                 padding: 0 40px 0 0;
             }
-        
+
             ul.col-md-2 li{
                 text-align: center;
             }
@@ -265,11 +275,11 @@
 //
 //    background: $slate;
 //    color: $white-three;
-//    
+//
 //    ul{
 //        display: block;
 //    }
-//    
+//
 //    ul.col-md-3{
 //        padding: 40px 0 40px 40px;
 //    }

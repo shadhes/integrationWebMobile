@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     $('.menu-button').click(function(e){
         e.preventDefault();
-        $this = $(this);
+        var $this = $(this);
         if($this.hasClass('menu-opened')){
             $this.addClass('menu-closed').removeClass('menu-opened');
         }else{
@@ -12,7 +12,7 @@ $(document).ready(function(){
 
     $('#menu-button-grey').click(function(e){
         e.preventDefault();
-        $this = $('#menu01');
+        var $this = $('#menu01');
         if($($this).hasClass('sub-block-opened')){
             $($this).addClass('sub-block-closed').removeClass('sub-block-opened');
         }else{
@@ -22,7 +22,7 @@ $(document).ready(function(){
 
     $('#menu-button-search').click(function(e){
         e.preventDefault();
-        $this = $('#menu02');
+        var $this = $('#menu02');
         if($($this).hasClass('sub-block-opened')){
             $($this).addClass('sub-block-closed').removeClass('sub-block-opened');
         }else{

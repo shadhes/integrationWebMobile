@@ -14,7 +14,8 @@ body{
 
 article.recherche{
     width: 100%;
-    position: relative;
+    position: absolute;
+    bottom: -158px;
     background: $earth;
 
     form{
@@ -52,7 +53,7 @@ article.recherche{
         @extend .border-form;
         border-left: solid 0px transparent;
         transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
-        
+
     }
     button:hover{
         background: $earth;
@@ -67,7 +68,7 @@ article.recherche{
 }
 
 .row {
-    @extend .flex-column-layout;
+    // @extend .flex-column-layout;
     width: 1280px;
     margin: 0;
 
@@ -104,7 +105,7 @@ article.recherche{
             padding: 0px;
 
             .title{
-                width: 100%;
+                width: 121%;
                 background: $pure-white;
 	            position: relative;
 	            top: 0;
@@ -123,9 +124,6 @@ article.recherche{
                 .breadcrumb{
                     margin-left: 0;
                 }
-
-
-
             }
         }
     }
@@ -182,9 +180,12 @@ article.recherche{
         }
     }
 }
-
+#first-section{
+    position: relative;
+    margin-bottom: 158px;
+}
 #third-section{
-    @extend .flex-row-layout;
+    // @extend .flex-row-layout;
 
     article[id="last-edit"]{
         @extend .reset-padding;

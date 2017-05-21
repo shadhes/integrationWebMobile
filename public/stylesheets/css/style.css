@@ -338,13 +338,13 @@ a {
   justify-content: space-between;
 }
 
-.flex-row-layout, #third-section {
+.flex-row-layout {
   display: inline-flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
 }
 
-.flex-column-layout, .row {
+.flex-column-layout {
   display: flex;
   flex-flow: column wrap;
   align-items: flex-start;
@@ -416,6 +416,7 @@ body {
   position: relative;
   width: 1280px;
   height: 150px;
+  z-index: 200;
 }
 .Header-Close .logo {
   display: flex;
@@ -556,14 +557,21 @@ body {
   width: 1280px;
   background-color: #455763;
 }
-.Header-Close .nav-button ul li .menu-nav-search {
+.Header-Close .nav-button ul li #menu02 {
   position: absolute;
-  bottom: -286px;
-  z-index: 100;
   left: 0px;
+}
+.Header-Close .nav-button ul li .menu-nav-search {
+  position: relative;
   z-index: 100;
   height: 286px;
   width: 1280px;
+}
+.Header-Close .nav-button ul li .menu-nav-search .recherche {
+  top: 50px;
+  left: 0px;
+  height: 158px;
+  position: absolute;
 }
 .Header-Close .nav-button ul li .menu-closed {
   display: none;
@@ -649,7 +657,8 @@ body {
 
 article.recherche {
   width: 100%;
-  position: relative;
+  position: absolute;
+  bottom: -158px;
   background: #a65447;
 }
 article.recherche form {
@@ -727,7 +736,7 @@ article.recherche a {
   padding: 0px;
 }
 .row article#vedette div .title {
-  width: 100%;
+  width: 121%;
   background: #fff;
   position: relative;
   top: 0;
@@ -782,6 +791,11 @@ article.recherche a {
 }
 .row article#about-news div#last-news div a:nth-child(3) {
   float: right;
+}
+
+#first-section {
+  position: relative;
+  margin-bottom: 158px;
 }
 
 #third-section article[id="last-edit"] .col-md-6 {
