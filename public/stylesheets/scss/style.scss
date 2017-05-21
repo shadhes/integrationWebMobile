@@ -51,6 +51,12 @@ article.recherche{
         background: $white-three;
         @extend .border-form;
         border-left: solid 0px transparent;
+        transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+        
+    }
+    button:hover{
+        background: $earth;
+        color: $white-three;
     }
     a{
         position: absolute;

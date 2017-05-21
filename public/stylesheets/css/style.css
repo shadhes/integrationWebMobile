@@ -119,8 +119,8 @@
   color: #fafafa;
 }
 
-.title-sub-menu, .sub-menu ul.col-md-3 li:nth-child(1),
-.sub-menu ul.col-md-7 li:nth-child(1) {
+.title-sub-menu, .Header-Close .nav-button div#menu01 ul.col-md-3 li:nth-child(1),
+.Header-Close .nav-button div#menu01 ul.col-md-7 li:nth-child(1) {
   font-family: "Montserrat";
   font-size: 20px;
   font-weight: 600;
@@ -130,7 +130,7 @@
   letter-spacing: 1px;
 }
 
-.nav-linkinvert, .sub-menu ul li {
+.nav-linkinvert, .Header-Close .nav-button div#menu01 ul li {
   font-family: "Open Sans";
   font-size: 18px;
   color: #fafafa;
@@ -480,6 +480,12 @@ body {
   font-size: 26px;
   color: #34414a;
 }
+.Header-Close .nav-button ul li a.search-button:focus {
+  text-decoration: none;
+}
+.Header-Close .nav-button ul li a.search-button:hover, .Header-Close .nav-button nav ul li li.search-button, .Header-Close nav .nav-button ul li li.search-button {
+  color: #a65447;
+}
 .Header-Close .nav-button ul li a.menu-button {
   display: block;
   position: relative;
@@ -578,36 +584,45 @@ body {
 .Header-Close .nav-button ul li:nth-child(2) {
   margin-top: -15px;
 }
-
-.sub-menu {
+.Header-Close .nav-button div#menu01 {
   background: #455763;
   color: #fafafa;
 }
-.sub-menu ul {
+.Header-Close .nav-button div#menu01 ul {
+  display: inline-block;
   list-style: none;
   padding: 0 0 0 40px;
   margin: 40px 0;
 }
-.sub-menu a {
+.Header-Close .nav-button div#menu01 ul.col-md-3 {
+  width: 25%;
+}
+.Header-Close .nav-button div#menu01 ul.col-md-7 {
+  width: 58.33333333%;
+}
+.Header-Close .nav-button div#menu01 ul.col-md-2 {
+  width: 16.66666667%;
+}
+.Header-Close .nav-button div#menu01 a {
   color: #fafafa;
 }
-.sub-menu ul li {
+.Header-Close .nav-button div#menu01 ul li {
   margin-bottom: 10px;
 }
-.sub-menu ul.col-md-2 li:nth-child(1) {
+.Header-Close .nav-button div#menu01 ul.col-md-2 li:nth-child(1) {
   display: block;
   width: 75%;
   margin: 0 auto 30px auto;
 }
-.sub-menu ul.col-md-2 li:nth-child(1) img {
+.Header-Close .nav-button div#menu01 ul.col-md-2 li:nth-child(1) img {
   width: 100%;
   border-radius: 50%;
   border: solid 5px #fafafa;
 }
-.sub-menu ul.col-md-2 {
+.Header-Close .nav-button div#menu01 ul.col-md-2 {
   padding: 0 40px 0 0;
 }
-.sub-menu ul.col-md-2 li {
+.Header-Close .nav-button div#menu01 ul.col-md-2 li {
   text-align: center;
 }
 
@@ -666,6 +681,11 @@ article.recherche button {
   margin: 0 auto 40px 0;
   background: #fafafa;
   border-left: solid 0px transparent;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+article.recherche button:hover {
+  background: #a65447;
+  color: #fafafa;
 }
 article.recherche a {
   position: absolute;
