@@ -1,11 +1,13 @@
-$('.menu-button').click(function() {
-    $('#sub-menu').toggle( function() {
-        e.preventDefault();
-        $this = $(this);
-        if($this.hasClass('sub-block-opened')){
-            $this.addClass('sub-block-closed').removeClass('sub-block-opened');
-        }else{
-            $this.removeClass('sub-block-closed').addClass('sub-block-opened');
-        }
-    });
-})
+// $(document).ready(function(){
+//
+//     $('#menu-button-grey').click(function(e){
+//         e.preventDefault();
+//         $this = $('#menu01');
+//         if($($this).hasClass('menu-opened')){
+//             $($this).addClass('menu-closed').removeClass('menu-opened');
+//         }else{
+//             $($this).removeClass('menu-closed').addClass('menu-opened');
+//         }
+//     });
+//
+// });

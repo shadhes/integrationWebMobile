@@ -34,42 +34,53 @@
             </nav>
             <div class="nav-button">
                 <ul>
-                    <li><a href="#" class="search-button">&#xe003;</a></li>
-                    <li><a href="#" class="menu-button menu-closed"><span></span></a></li>
+                    <li>
+                        <a href="#" id="menu-button-search" class="search-button">&#xe003;</a>
+                        <div id="menu02" class="menu-nav-search sub-block-closed">
+                            <article class="recherche ">
+                                <form method="">
+                                    <label>Recherchez à travers nos 11 257 adresses et 61 652 photos :</label>
+                                    <input type="text" placeholder="Indiquez une adresse, un nom de rue ou un bâtiment"/>
+                                    <button class="glyphicon glyphicon-search"></button>
+                                    <a href="#" class="recherche-avance">recherche avancée</a>
+                                </form>
+                            </article>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" id="menu-button-grey" class="menu-button menu-closed"><span></span></a>
+                        <div id="menu01" class="menu-nav-grey sub-block-closed">
+                            <article class="sub-menu">
+                                <ul class="col-md-3">
+                                    <li>L’association</li>
+                                    <li><a href="#">Devenir membre</a></li>
+                                    <li><a href="#">Faire un don</a></li>
+                                    <li><a href="#">Revue de presse</a></li>
+                                    <li><a href="#">Nos sources</a></li>
+                                    <li><a href="#">Nos donateurs</a></li>
+                                </ul>
+                                <ul class="col-md-7">
+                                    <li>Contribuer au site</li>
+                                    <li><a href="#">Consulter l’historique de la page</a></li>
+                                    <li><a href="#">Aide à la contribution</a></li>
+                                </ul>
+                                <ul class="col-md-2">
+                                    <li><img src="./images/avatar.png" alt=""/></li>
+                                    <li><a href="#">Se connecter</a></li>
+                                    <li><a href="#">S'inscrire</a></li>
+                                </ul>
+                            </article>
+                        </div>
+                    </li>
                 </ul>
             </div>
+        </div>
+        <div class="col-md-12">
+
+
+
         </div> <!-- end Header -->
     </header>
-
-    <article class="recherche" id="sub-search">
-        <form method="">
-            <label>Recherchez à travers nos 11 257 adresses et 61 652 photos :</label>
-            <input type="text" placeholder="Indiquez une adresse, un nom de rue ou un bâtiment"/>
-            <button class="glyphicon glyphicon-search"></button>
-            <a href="#" class="recherche-avance">recherche avancée</a>
-        </form>
-    </article>
-
-    <article class="sub-menu sub-block-closed" id="sub-menu">
-        <ul class="col-md-3">
-            <li>L’association</li>
-            <li><a href="#">Devenir membre</a></li>
-            <li><a href="#">Faire un don</a></li>
-            <li><a href="#">Revue de presse</a></li>
-            <li><a href="#">Nos sources</a></li>
-            <li><a href="#">Nos donateurs</a></li>
-        </ul>
-        <ul class="col-md-7">
-            <li>Contribuer au site</li>
-            <li><a href="#">Consulter l’historique de la page</a></li>
-            <li><a href="#">Aide à la contribution</a></li>
-        </ul>
-        <ul class="col-md-2">
-            <li><img src="./images/avatar.png" alt=""/></li>
-            <li><a href="#">Se connecter</a></li>
-            <li><a href="#">S'inscrire</a></li>
-        </ul>
-    </article>
 
     <!-- SECTION 1 -->
 
@@ -300,8 +311,6 @@
   </div>   <!--end Main Container -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="stylesheets/js/animation-menu-button.js"></script>
-    <script src="stylesheets/js/toggle-menu-button.js"></script>
-    <script src="stylesheets/js/toggle-recherche-button.js"></script>
 </body>
 
 </html>

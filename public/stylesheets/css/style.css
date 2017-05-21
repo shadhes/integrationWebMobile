@@ -413,6 +413,7 @@ body {
 }
 
 .Header-Close {
+  position: relative;
   width: 1280px;
   height: 150px;
 }
@@ -540,6 +541,30 @@ body {
   background: #34414a;
   transition-delay: 0.2s;
 }
+.Header-Close .nav-button ul li .menu-nav-grey {
+  position: absolute;
+  bottom: -286px;
+  left: 0px;
+  z-index: 100;
+  height: 286px;
+  width: 1280px;
+  background-color: #455763;
+}
+.Header-Close .nav-button ul li .menu-nav-search {
+  position: absolute;
+  bottom: -286px;
+  z-index: 100;
+  left: 0px;
+  z-index: 100;
+  height: 286px;
+  width: 1280px;
+}
+.Header-Close .nav-button ul li .menu-closed {
+  display: none;
+}
+.Header-Close .nav-button ul li .menu-opened {
+  display: block;
+}
 .Header-Close .nav-button ul li a.menu-closed span {
   background: #34414a;
   transition: background 0.2s ease-in-out;
@@ -600,8 +625,7 @@ body {
 
 .sub-block-opened {
   position: absolute;
-  top: 150px;
-  display: flex;
+  display: block;
   visibility: visible;
   opacity: 1;
   transform: translateY(0);

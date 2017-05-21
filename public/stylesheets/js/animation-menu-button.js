@@ -10,6 +10,26 @@ $(document).ready(function(){
         }
     });
 
+    $('#menu-button-grey').click(function(e){
+        e.preventDefault();
+        $this = $('#menu01');
+        if($($this).hasClass('sub-block-opened')){
+            $($this).addClass('sub-block-closed').removeClass('sub-block-opened');
+        }else{
+            $($this).removeClass('sub-block-closed').addClass('sub-block-opened');
+        }
+    });
+
+    $('#menu-button-search').click(function(e){
+        e.preventDefault();
+        $this = $('#menu02');
+        if($($this).hasClass('sub-block-opened')){
+            $($this).addClass('sub-block-closed').removeClass('sub-block-opened');
+        }else{
+            $($this).removeClass('sub-block-closed').addClass('sub-block-opened');
+        }
+    });
+
     var url = "stylesheets/css/";
     let fetchStyle = function(url) {
       return new Promise((resolve, reject) => {
