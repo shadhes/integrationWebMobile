@@ -1,0 +1,63 @@
+@media (max-width: 420px) {
+    .h2-likemobile{
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .h3-likeinvertmobile {
+        font-family: $montserrat;
+        font-size: 16px;
+        font-weight: $monserrat-bold;
+        text-align: center;
+        color: $white-two;
+    }
+        
+    .h3-likemobilealign-center {
+        font-family: $montserrat;
+        font-size: 16px;
+        font-weight: $monserrat-bold;
+        line-height: 1.22;
+        text-align: center;
+        color: $blue-grey;
+    }
+        
+    .h3-likemobile {
+        font-family: $montserrat;
+        font-size: 16px;
+        font-weight: $monserrat-bold;
+        line-height: 1.22;
+        color: $blue-grey;
+    }
+    
+    .h5-likemobile {
+        font-family: $montserrat;
+        font-size: 12px;
+        font-weight: $monserrat-bold;
+        line-height: 1.75;
+        color: $blue-grey;
+    }
+    
+    .h5-likeinvertmobile {
+        font-family: $montserrat;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 1.75;
+        color: $white-three;
+    }
+    
+    .pmobile {
+        font-family: $opensans;
+        font-size: 12px;
+        line-height: 1.43;
+        text-align: left;
+        color: $dark;
+    }
+    
+    .buttonlargemobile {
+        font-family: $opensans;
+        font-size: 10px;
+        font-weight: $opensans-semibold;
+        text-align: center;
+        color: $charcoal-grey;
+    }
+}
