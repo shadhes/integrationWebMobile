@@ -44,7 +44,19 @@ $(document).ready(function(){
       });
     };
 
+    if($(window).width() < 420){
+      $(".logo a img").attr('src', "./images/white-logo_archi_wiki.png");
+    }
 
 });
 
-console.log('coucou je suis bien chargé !')
+window.onresize = function (event) {
+  if($(window).width() < 420){
+    console.log("swap logo black");
+    $(".logo a img").attr('src', "./images/white-logo_archi_wiki.png");
+  }
+  if($(window).width() > 420){
+    console.log("swap logo white");
+    $(".logo a img").attr('src', "./images/black-logo_archi_wiki.png");
+  }
+}
